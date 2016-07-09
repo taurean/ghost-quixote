@@ -1,0 +1,68 @@
+$__alpha-stops: (0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1);
+
+@function grayscale($gradation, $alpha: 1) {
+    @if map-has-key($nf-grayscale, $gradation) {
+        $alpha-val: $alpha;
+
+        @if index($__alpha-stops, $alpha-val) == null {
+            @error "Only alpha values in 0.1 increments are allowed";
+        }
+
+        $grayscale-val: map-get($nf-grayscale, $gradation);
+        @return rgba($grayscale-val, $alpha-val);
+    } @else {
+        @warn "No gradation of #{$gradation} found in $DBgrayscaleColors map.";
+    }
+}
+
+@function color($name, $shade:0, $alpha:1) {
+$rgb: ();
+    @if ($shade == -9) { $rgb: mix($nf-hue-base-dark, map-get($nf-hue, $name),  75%) }
+    @if ($shade == -8) { $rgb: mix($nf-hue-base-dark, map-get($nf-hue, $name),  70%) }
+    @if ($shade == -7) { $rgb: mix($nf-hue-base-dark, map-get($nf-hue, $name),  65%) }
+    @if ($shade == -6) { $rgb: mix($nf-hue-base-dark, map-get($nf-hue, $name),  60%) }
+    @if ($shade == -5) { $rgb: mix($nf-hue-base-dark, map-get($nf-hue, $name),  50%) }
+    @if ($shade == -4) { $rgb: mix($nf-hue-base-dark, map-get($nf-hue, $name),  40%) }
+    @if ($shade == -3) { $rgb: mix($nf-hue-base-dark, map-get($nf-hue, $name),  30%) }
+    @if ($shade == -2) { $rgb: mix($nf-hue-base-dark, map-get($nf-hue, $name),  20%) }
+    @if ($shade == -1) { $rgb: mix($nf-hue-base-dark, map-get($nf-hue, $name),  10%) }
+    @if ($shade == 0) { $rgb: map-get($nf-hue, $name) }
+    @if ($shade == 1)  { $rgb: mix($nf-hue-base-light, map-get($nf-hue, $name),   10%) }
+    @if ($shade == 2)  { $rgb: mix($nf-hue-base-light, map-get($nf-hue, $name),   20%) }
+    @if ($shade == 3)  { $rgb: mix($nf-hue-base-light, map-get($nf-hue, $name),   30%) }
+    @if ($shade == 4)  { $rgb: mix($nf-hue-base-light, map-get($nf-hue, $name),   40%) }
+    @if ($shade == 5)  { $rgb: mix($nf-hue-base-light, map-get($nf-hue, $name),   50%) }
+    @if ($shade == 6)  { $rgb: mix($nf-hue-base-light, map-get($nf-hue, $name),   60%) }
+    @if ($shade == 7)  { $rgb: mix($nf-hue-base-light, map-get($nf-hue, $name),   65%) }
+    @if ($shade == 8)  { $rgb: mix($nf-hue-base-light, map-get($nf-hue, $name),   70%) }
+    @if ($shade == 9)  { $rgb: mix($nf-hue-base-light, map-get($nf-hue, $name),   75%) }
+
+
+    @return rgba($rgb, $alpha);
+}
+
+// @function color($name, $shade:0, $alpha:1) {
+// $rgb: ();
+//     @if ($shade == -9) { $rgb: mix($nf-hue-base-dark, map-get($nf-grayscale, $name),  75%) }
+//     @if ($shade == -8) { $rgb: mix($nf-hue-base-dark, map-get($nf-grayscale, $name),  70%) }
+//     @if ($shade == -7) { $rgb: mix($nf-hue-base-dark, map-get($nf-grayscale, $name),  65%) }
+//     @if ($shade == -6) { $rgb: mix($nf-hue-base-dark, map-get($nf-grayscale, $name),  60%) }
+//     @if ($shade == -5) { $rgb: mix($nf-hue-base-dark, map-get($nf-grayscale, $name),  50%) }
+//     @if ($shade == -4) { $rgb: mix($nf-hue-base-dark, map-get($nf-grayscale, $name),  40%) }
+//     @if ($shade == -3) { $rgb: mix($nf-hue-base-dark, map-get($nf-grayscale, $name),  30%) }
+//     @if ($shade == -2) { $rgb: mix($nf-hue-base-dark, map-get($nf-grayscale, $name),  20%) }
+//     @if ($shade == -1) { $rgb: mix($nf-hue-base-dark, map-get($nf-grayscale, $name),  10%) }
+//     @if ($shade == 0) { $rgb: map-get($nf-hue, $name) }
+//     @if ($shade == 1)  { $rgb: mix($nf-hue-base-light, map-get($nf-grayscale, $name),   10%) }
+//     @if ($shade == 2)  { $rgb: mix($nf-hue-base-light, map-get($nf-grayscale, $name),   20%) }
+//     @if ($shade == 3)  { $rgb: mix($nf-hue-base-light, map-get($nf-grayscale, $name),   30%) }
+//     @if ($shade == 4)  { $rgb: mix($nf-hue-base-light, map-get($nf-grayscale, $name),   40%) }
+//     @if ($shade == 5)  { $rgb: mix($nf-hue-base-light, map-get($nf-grayscale, $name),   50%) }
+//     @if ($shade == 6)  { $rgb: mix($nf-hue-base-light, map-get($nf-grayscale, $name),   60%) }
+//     @if ($shade == 7)  { $rgb: mix($nf-hue-base-light, map-get($nf-grayscale, $name),   65%) }
+//     @if ($shade == 8)  { $rgb: mix($nf-hue-base-light, map-get($nf-grayscale, $name),   70%) }
+//     @if ($shade == 9)  { $rgb: mix($nf-hue-base-light, map-get($nf-grayscale, $name),   75%) }
+//
+//
+//     @return rgba($rgb, $alpha);
+// }

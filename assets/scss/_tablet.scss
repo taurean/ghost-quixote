@@ -1,0 +1,265 @@
+/* ==============================
+/* ==============================
+
+// Master Header
+
+/* ==============================
+/* =========================== */
+
+
+.master-header {
+  background: color(white, 0, 0.9);
+  padding: 1rem 0;
+  flex-direction: row;
+  width: 100%;
+
+  &-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1440px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    flex-basis: auto;
+    flex-grow: 1;
+  }
+
+  body.nightmode & {
+    background: color(black, 0, 0.9);
+  }
+}
+
+.master-header .heading,
+.master-header nav {
+  background-color: transparent;
+  body.nightmode & {
+    background-color: transparent;
+  }
+}
+
+.master-header nav {
+  max-width: 400px;
+  min-width: 200px;
+  display: block;
+  flex-basis: auto;
+  flex-grow: 1;
+  padding: 0;
+
+  ul {
+    min-height: 50px;
+    align-items: center;
+
+    li {
+      font-size: $font-size-h3;
+    }
+  }
+
+}
+
+
+/* ==============================
+/* ==============================
+
+// Master Footer
+
+/* ==============================
+/* =========================== */
+
+
+footer {
+  height: 24rem;
+}
+
+footer .footer-nav {
+  width: 100%;
+  // flex-direction: row;
+
+}
+
+footer .footer-nav .main-footer-nav li,
+footer .footer-nav .secondary-footer-nav li {
+  margin: .6rem 2rem;
+}
+
+/* ==============================
+/* =================================================
+****************************************************
+••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+
+####################################################
+
+// Entries Page   ##################################
+
+####################################################
+
+
+••••••••••••••••••••••••••••••••••••••••••••••••••••
+****************************************************
+/* =================================================
+/* =========================== */
+
+
+
+/* ============= *\
+
+Individual Entries
+
+\* ============= */
+
+
+section.entry-directory {
+  display: flex;
+  // outline: 1px solid red;
+  flex-wrap: wrap;
+  padding: 4rem 1rem;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+article.entry-snippet {
+
+  @include first(1) {
+    text-align: center;
+    background: color(white);
+    border-radius: .6rem;
+    padding: 10rem 0;
+
+    body.nightmode & {
+      background: color(black, -1);
+
+      p:after {
+        background: linear-gradient(to bottom, color(black, -1, 0.0), color(black, -1, 0.6) 100%);
+      }
+    }
+
+    h2 {
+      font-size: $font-size-h1;
+      text-align: center;
+    }
+    h3 {
+      font-size: $font-size-h2;
+      text-align: center;
+    }
+
+    p {
+      font-size: $font-size-base;
+      max-width: 50rem;
+      margin: 2rem auto;
+      text-align: left;
+      -webkit-line-clamp: 8;
+
+      &:after {
+        background: linear-gradient(to bottom, color(white, 0, 0.0), color(white, 0, 0.6) 100%);
+      }
+    }
+
+  }
+  @include after-first(1) {
+    width: 30%;
+    max-width: 30%;
+    margin-right: 3.33333333%;
+    flex-basis: auto;
+    flex-grow: 1;
+  }
+  //
+  // @include last(1) {
+  //   margin-right: 50%;
+  // }
+}
+
+
+
+/* ==============================
+/* =================================================
+****************************************************
+••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+
+####################################################
+
+// Blog Post Page   ################################
+
+####################################################
+
+
+••••••••••••••••••••••••••••••••••••••••••••••••••••
+****************************************************
+/* =================================================
+/* =========================== */
+
+
+.journal-entry {
+  max-width: 70rem;
+  margin: 4rem auto;
+
+  h1.post-title {
+    font-size: $font-size-masthead;
+    font-family: $fontstack-masthead;
+    font-style: italic;
+    text-align: left;
+    margin: 0 auto;
+  }
+
+  h2 time.post-date {
+    font-family: $fontstack-ui;
+    opacity: 0.5;
+    text-align: left;
+    font-size: $font-size-h2;
+    margin: 1rem 0 2rem;
+    font-weight: $font-normal;
+  }
+
+  p {
+    font-size: $font-size-h3;
+    font-family: $fontstack-text;
+  }
+}
+
+/* ==============================
+/* =================================================
+****************************************************
+••••••••••••••••••••••••••••••••••••••••••••••••••••
+
+
+####################################################
+
+// Featured Work   #################################
+
+####################################################
+
+
+••••••••••••••••••••••••••••••••••••••••••••••••••••
+****************************************************
+/* =================================================
+/* =========================== */
+
+.work-thumb {
+  display: inline-block;
+  margin-bottom: 1rem;
+  width: calc(50% - 1rem);
+  margin-right: 1rem;
+
+  &:first-of-type {
+    margin-top: 4rem;
+  }
+
+  &:nth-of-type(even) {
+    margin-right: 0;
+
+    .work-thumb-title {
+      left: 1rem;
+      right: inherit;
+      text-align: left;
+    }
+  }
+
+  &:last-of-type:nth-of-type(odd) {
+    margin: 0 auto 2rem auto;
+    width: 50%;
+    display: block;
+  }
+}

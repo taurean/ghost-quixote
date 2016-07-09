@@ -1,0 +1,31 @@
+// color
+$nf-hue-base-dark:   #0E1430;
+$nf-hue-base-light:  #F5EAE1;
+
+$brand-color-one:    #0D485C;
+$brand-color-two:    #E57273;
+$brand-color-three:  $brand-color-one;
+$brand-color-four:   $brand-color-one;
+$brand-color-five:   $brand-color-one;
+$brand-color-six:    $brand-color-one;
+
+$red-base:           #DA1515;
+$blue-base:          #0E60D3;
+$yellow-base:        #FFFF63;
+
+
+$orange-base:        mix($red-base, $yellow-base, 50%);
+$green-base:         adjust-hue(darken(saturate(mix($yellow-base, $blue-base, 48%), 50%), 10%), 40);
+$purple-base:        mix($red-base, $blue-base, 50%);
+$indigo-base:        mix($blue-base, $purple-base, 38%);
+$violet-base:        mix($red-base, $purple-base, 50%);
+
+$focus-base:         $blue-base;
+$info-base:          $blue-base;
+$alert-base:         $yellow-base;
+$warning-base:       $orange-base;
+$danger-base:        $red-base;
+$success-base:       $green-base;
+
+$gray-base:          #B9B9BD;
+ 

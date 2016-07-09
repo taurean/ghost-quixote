@@ -1,0 +1,13 @@
+
+{{!< default}}
+<h2 class="work-archive-masthead">Work Archive</h2>
+<section class="work-archive">
+{{#get "posts" filter="tags:pastwork"}}
+    {{#foreach posts}}
+        <img src="{{image}}">
+    {{/foreach}}
+{{/get}}
+
+</section>
+
+  {{!-- {{> "loop"}} --}}

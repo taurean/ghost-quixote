@@ -1,0 +1,55 @@
+@font-face {
+  font-family: 'National';
+  src: url('NationalWeb-Regular.eot'); /* IE9 Compat Modes */
+  src: url('NationalWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('NationalWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('NationalWeb-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+  font-family: "National";
+  font-weight: normal;
+  src: url('NationalWeb-RegularItalic.eot'); /* IE9 Compat Modes */
+  src: url('NationalWeb-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('NationalWeb-RegularItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('NationalWeb-RegularItalic.woff') format('woff'); /* Pretty Modern Browsers */
+ font-style: italic;
+}
+
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: url('TiemposHeadlineWeb-Medium.eot'); /* IE9 Compat Modes */
+  src: url('TiemposHeadlineWeb-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('TiemposHeadlineWeb-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+       url('TiemposHeadlineWeb-Medium.woff') format('woff'); /* Pretty Modern Browsers */
+ font-style: normal;
+}
+
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: url('TiemposHeadlineWeb-MediumItalic.eot'); /* IE9 Compat Modes */
+  src: url('TiemposHeadlineWeb-MediumItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('TiemposHeadlineWeb-MediumItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('TiemposHeadlineWeb-MediumItalic.woff') format('woff'); /* Pretty Modern Browsers */
+ font-style: italic;
+}
+
+@font-face {
+  font-family: 'TiemposText';
+  src: url('TiemposTextWeb-Regular.eot'); /* IE9 Compat Modes */
+  src: url('TiemposTextWeb-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('TiemposTextWeb-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('TiemposTextWeb-Regular.woff') format('woff'); /* Pretty Modern Browsers */
+}
+
+@font-face {
+  font-family: 'TiemposText';
+  font-style: italic;
+  src: url('TiemposTextWeb-RegularItalic.eot'); /* IE9 Compat Modes */
+  src: url('TiemposTextWeb-RegularItalic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('TiemposTextWeb-RegularItalic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('TiemposTextWeb-RegularItalic.woff') format('woff'); /* Pretty Modern Browsers */
+}

@@ -1,0 +1,40 @@
+$nf-hue: (
+    white: #ffffff,
+    black: #151515,
+
+    brand-color-one: $brand-color-one,
+    brand-color-two: $brand-color-two,
+    brand-color-three: $brand-color-three,
+    brand-color-four: $brand-color-four,
+    brand-color-five: $brand-color-five,
+    brand-color-six: $brand-color-six,
+
+    red: $red-base,
+    orange: $orange-base,
+    yellow: $yellow-base,
+    green: $green-base,
+    blue: $blue-base,
+    indigo: $indigo-base,
+    violet: $violet-base,
+
+    focus: $focus-base,
+    info: $info-base,
+    alert: $alert-base,
+    warning: $warning-base,
+    danger: $danger-base,
+    success: $success-base,
+) !default;
+
+$nf-grayscale: (
+black: #09090b,
+    1: #232325,
+    2: #353538,
+    3: #49494b,
+    4: #5d5d60,
+    5: #707072,
+    6: #808083,
+    7: #a4a4a6,
+    8: #bdbdbf,
+    9: #e9e9e9,
+white: #ffffff
+) !default;

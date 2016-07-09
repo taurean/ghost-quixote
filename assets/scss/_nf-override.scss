@@ -1,0 +1,15 @@
+@import '../webfonts/webfonts.css';
+
+$nf-hue-base-dark: #181518;
+$nf-hue-base-light: #FEF7EC;
+
+$brand-color-one: #D65196;
+$brand-color-two: #5D99DB;
+
+$font-size-masthead:        8.0rem;
+
+// Fontstacks
+$fontstack-display: 'TiemposHeadline', Georgia,Times,"Times New Roman",serif;
+$fontstack-masthead: $fontstack-display;
+$fontstack-text:  'TiemposText', Georgia,Times,"Times New Roman",serif;
+$fontstack-ui: 'National', Arial,"Helvetica Neue",Helvetica,sans-serif;

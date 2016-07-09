@@ -1,0 +1,29 @@
+.btn {
+  color: color(white);
+  background: color(black, 0, 0.8);
+  padding: .6rem 1.2rem;
+  font-family: $fontstack-ui;
+  display: inline-block;
+  border-radius: .3rem;
+  font-size: $font-size-base;
+  line-height: $font-size-base;
+
+  &:hover {
+    background: color(black);
+  }
+
+
+  &--small {
+    font-size: $font-size-h5;
+    font-size: $font-size-h5;
+  }
+}
+
+body.nightmode .btn {
+  background: color(white, -2, 0.8);
+  color: color(black);
+
+  &:hover {
+    background: color(white, -1);
+  }
+}

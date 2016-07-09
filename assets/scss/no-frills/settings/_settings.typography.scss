@@ -1,0 +1,27 @@
+// Type Scale
+$rem-base:                    10px;
+$font-size-base:            1.6rem;
+$font-size-h1:              2.8rem;
+$font-size-h2:              2.2rem;
+$font-size-h3:              1.8rem;
+$font-size-h4:              1.4rem;
+$font-size-h5:              1.2rem;
+$font-size-h6:              1.0rem;
+$font-size-masthead:        5.0rem;
+
+// Line Height
+$line-height-base:          1.6;
+$line-height-heading:       1.2;
+$line-height-ui:            1;
+
+// Font Weights
+$font-light:                300;
+$font-normal:               400;
+$font-bold:                 500;
+
+// Fontstacks
+$fontstack-display:        "Helvetica Neue",Helvetica,Arial,sans-serif;
+$fontstack-masthead:        $fontstack-display;
+$fontstack-text:            Georgia,Times,"Times New Roman",serif;
+$fontstack-monospace:       "Andale Mono",AndaleMono,monospace;
+$fontstack-ui:              Arial,"Helvetica Neue",Helvetica,sans-serif;
