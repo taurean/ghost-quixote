@@ -350,64 +350,7 @@ nav.content-pagination {
 /* =========================== */
 
 
-.journal-entry {
-  display: flex;
-  flex-direction: column;
-  max-width: 1040px;
-  padding: 1rem 2rem;
-  margin: 1rem auto;
-  flex-basis: auto;
-  flex-grow: 1;
 
-  h1.post-title {
-    font-size: 4rem;
-    text-align: center;
-    font-family: $fontstack-masthead;
-    font-style: italic;
-    line-height: $line-height-heading;
-  }
-
-  h2 time.post-date {
-    font-family: $fontstack-ui;
-    opacity: 0.5;
-    font-size: $font-size-h3;
-    margin: 1rem 0 2rem;
-    font-weight: $font-normal;
-    text-align: center;
-  }
-
-  p {
-    font-size: $font-size-base;
-    margin-bottom: 1rem;
-    font-family: $fontstack-text;
-    line-height: $line-height-base;
-  }
-}
-
-.journal-entry p {
-  a:link,
-  a:visited {
-    font-style: italic;
-    display: inline-block;
-    // font-family: $fontstack-display;
-    color: color(brand-color-one);
-    animation: blinker 3s linear infinite;
-    padding: 0 .2rem;
-    background-image: linear-gradient(to top,
-    rgba(color(brand-color-one), 0) 10%,
-    rgba(color(brand-color-one), .5) 14%,
-    rgba(color(brand-color-one), .5) 14%,
-    rgba(color(brand-color-one), 0) 20%
-    );
-    border-radius: .3rem;
-    transition: all .125s ease;
-  }
-
-  a:hover {
-    background: color(brand-color-one, 0, 0.8);
-    color: color(white);
-  }
-}
 
 
 /* ==============================
@@ -439,6 +382,7 @@ nav.content-pagination {
 	position: relative;
   max-width: 100%;
 	background-image: none;
+  border-radius: 3px;
   background: color(black);
 
   &-title {
@@ -488,6 +432,7 @@ nav.content-pagination {
 
   &-img,
   &-img img {
+    border-radius: 3px !important;
     width: 100%;
 	-webkit-transition: -webkit-filter 0.13s ease-in;
     -moz-transition: -moz-filter 0.13s ease-in;
@@ -529,62 +474,7 @@ nav.content-pagination {
 /* ==============================
 /* =========================== */
 
-.case-study {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-bottom: 4rem;
-  border-radius: 0 0 .3rem;
-  background-color: color(white);
 
-  &-img {
-    width: 100%;
-    display: block;
-    max-width: 1440px;
-  }
-
-  &-section-img {
-    max-width: 10rem;
-    margin: 0 auto;
-    display: block;
-  }
-
-  &-heading,
-  &-subheading {
-    width: 100%;
-    font-family: $fontstack-ui;
-    text-align: center;
-  }
-
-  &-heading {
-    font-size: 4rem;
-    margin-top: 3rem;
-    font-weight: $font-normal;
-  }
-
-  &-subheading {
-    font-size: $font-size-h1;
-    font-weight: $font-normal;
-  }
-
-  &-copy {
-    font-size: $font-size-h3;
-    opacity: 0.7;
-    font-family: $fontstack-ui;
-    width: 100%;
-    max-width: 60rem;
-    padding: 0 1rem;
-    margin: 0 auto 6rem auto;
-  }
-
-  &-section-img {
-    margin-top: 6rem;
-  }
-  &-section-img + &-subheading {
-    margin-bottom: 5rem;
-  }
-
-}
 
 
 

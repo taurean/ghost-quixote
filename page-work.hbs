@@ -1,16 +1,18 @@
 
 {{!< default}}
+<section class="featured-work">
 
-<section class="entry-directory">
 {{#get "posts" include="date,url" filter="tags:workstudy"}}
     {{#foreach posts}}
-      <article class="entry-snippet">
-      <h2>{{title}}</h2>
-      <h3>{{date}}</h3>
-  <p>{{excerpt character="256"}}</p>
-<a href="../{{slug}}" class="btn btn--small read-more-btn">Read More <span class="right-arrow">&#8594;</span></a>
-</article>
+
+      <a href="../{{slug}}" class="work-thumb">
+        <figcaption class="work-thumb-title">{{title}}</figcaption>
+        <figure class="work-thumb-img">
+          <img src="{{image absolute="true"}}" alt="thumb">
+        </figure>
+      </a>
 
     {{/foreach}}
 {{/get}}
+
 </section>

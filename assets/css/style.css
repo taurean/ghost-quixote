@@ -555,47 +555,6 @@ nav.content-pagination {
 *********************************
 /* ==============================
 /* =========================== */
-.journal-entry {
-  display: flex;
-  flex-direction: column;
-  max-width: 1040px;
-  padding: 1rem 2rem;
-  margin: 1rem auto;
-  flex-basis: auto;
-  flex-grow: 1; }
-  .journal-entry h1.post-title {
-    font-size: 4rem;
-    text-align: center;
-    font-family: "TiemposHeadline", Georgia, Times, "Times New Roman", serif;
-    font-style: italic;
-    line-height: 1.2; }
-  .journal-entry h2 time.post-date {
-    font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    opacity: 0.5;
-    font-size: 1.8rem;
-    margin: 1rem 0 2rem;
-    font-weight: 400;
-    text-align: center; }
-  .journal-entry p {
-    font-size: 1.6rem;
-    margin-bottom: 1rem;
-    font-family: "TiemposText", Georgia, Times, "Times New Roman", serif;
-    line-height: 1.6; }
-
-.journal-entry p a:link,
-.journal-entry p a:visited {
-  font-style: italic;
-  display: inline-block;
-  color: #d65196;
-  animation: blinker 3s linear infinite;
-  padding: 0 .2rem;
-  background-image: linear-gradient(to top, rgba(214, 81, 150, 0) 10%, rgba(214, 81, 150, 0.5) 14%, rgba(214, 81, 150, 0.5) 14%, rgba(214, 81, 150, 0) 20%);
-  border-radius: .3rem;
-  transition: all .125s ease; }
-.journal-entry p a:hover {
-  background: rgba(214, 81, 150, 0.8);
-  color: white; }
-
 /* ==============================
 /* ==============================
 *********************************
@@ -623,6 +582,7 @@ nav.content-pagination {
   position: relative;
   max-width: 100%;
   background-image: none;
+  border-radius: 3px;
   background: #151515; }
   .work-thumb-title {
     position: absolute;
@@ -658,6 +618,7 @@ nav.content-pagination {
     left: 0;
     width: 100%; }
   .work-thumb-img, .work-thumb-img img {
+    border-radius: 3px !important;
     width: 100%;
     -webkit-transition: -webkit-filter 0.13s ease-in;
     -moz-transition: -moz-filter 0.13s ease-in;
@@ -687,45 +648,6 @@ nav.content-pagination {
 *********************************
 /* ==============================
 /* =========================== */
-.case-study {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding-bottom: 4rem;
-  border-radius: 0 0 .3rem;
-  background-color: white; }
-  .case-study-img {
-    width: 100%;
-    display: block;
-    max-width: 1440px; }
-  .case-study-section-img {
-    max-width: 10rem;
-    margin: 0 auto;
-    display: block; }
-  .case-study-heading, .case-study-subheading {
-    width: 100%;
-    font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    text-align: center; }
-  .case-study-heading {
-    font-size: 4rem;
-    margin-top: 3rem;
-    font-weight: 400; }
-  .case-study-subheading {
-    font-size: 2.8rem;
-    font-weight: 400; }
-  .case-study-copy {
-    font-size: 1.8rem;
-    opacity: 0.7;
-    font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    width: 100%;
-    max-width: 60rem;
-    padding: 0 1rem;
-    margin: 0 auto 6rem auto; }
-  .case-study-section-img {
-    margin-top: 6rem; }
-  .case-study-section-img + .case-study-subheading {
-    margin-bottom: 5rem; }
-
 /* ==============================
 /* ==============================
 *********************************
@@ -888,14 +810,6 @@ body.nightmode {
     color: white; }
   body.nightmode article.entry-snippet p:after {
     background: linear-gradient(to bottom, rgba(9, 9, 11, 0), rgba(9, 9, 11, 0.9) 100%); }
-  body.nightmode .journal-entry h2 {
-    color: #e8e8e8; }
-  body.nightmode .journal-entry h3 {
-    color: #a3a1a3; }
-  body.nightmode .journal-entry p {
-    color: #d1d0d1; }
-  body.nightmode .case-study {
-    background-color: #2c2c2b; }
 
 @media all and (min-width: 680px) {
   /* ==============================
@@ -1050,26 +964,6 @@ body.nightmode {
   *********************************
   /* ==============================
   /* =========================== */
-  .journal-entry {
-    max-width: 70rem;
-    margin: 4rem auto; }
-    .journal-entry h1.post-title {
-      font-size: 8rem;
-      font-family: "TiemposHeadline", Georgia, Times, "Times New Roman", serif;
-      font-style: italic;
-      text-align: left;
-      margin: 0 auto; }
-    .journal-entry h2 time.post-date {
-      font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
-      opacity: 0.5;
-      text-align: left;
-      font-size: 2.2rem;
-      margin: 1rem 0 2rem;
-      font-weight: 400; }
-    .journal-entry p {
-      font-size: 1.8rem;
-      font-family: "TiemposText", Georgia, Times, "Times New Roman", serif; }
-
   /* ==============================
   /* ==============================
   *********************************
