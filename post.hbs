@@ -6,8 +6,6 @@
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
 
-
-
 {{#has tag="writing"}}
 
 <article class="journal-entry">
@@ -26,21 +24,25 @@
 
 {{/has}}
 
+{{#has tag="workstudy"}}
 
-{{#has tag="pastwork"}}
 <article>
   <h1>{{title}}</h1>
 
   <img src="{{image}}">
   <h2>
-    <time class="post-date" datetime="{{date format="MMMM Do, YYYY"}}">{{date format="MMMM Do, YYYY"}}</time>
+    <time datetime="{{date format="MMMM Do, YYYY"}}">{{date format="MMMM Do, YYYY"}}</time>
   </h2>
 
 
   {{content}}
 
 </article>
-{{/has}
+
+
+{{/has}}
+
+
 
 
 
