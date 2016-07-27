@@ -6,50 +6,42 @@
 {{!-- Everything inside the #post tags pulls data from the post --}}
 {{#post}}
 
-    <article class="journal-entry">
-        <h1 class="post-title">{{title}}</h1>
-
-        <img src="{{image}}">
-        <h2>
-          <time class="post-date" datetime="{{date format="MMMM Do, YYYY"}}">{{date format="MMMM Do, YYYY"}}</time>
-        </h2>
 
 
-            {{content}}
+{{#has tag="writing"}}
 
-    </article>
+<article class="journal-entry">
+  <h1 class="post-title">{{title}}</h1>
 
-    {{!-- Links to Previous/Next posts --}}
+  <img src="{{image}}">
+  <h2>
+    <time class="post-date" datetime="{{date format="MMMM Do, YYYY"}}">{{date format="MMMM Do, YYYY"}}</time>
+  </h2>
 
 
-{{!-- Links to Previous/Next posts --}}
-{{!-- <aside class="read-next">
-    {{#next_post}}
-    <a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
-            <p>{{excerpt words="19"}}&hellip;</p>
-        </section>
-    </a>
-    {{/next_post}}
-    {{#prev_post}}
-    <a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-        <section class="post">
-            <h2>{{title}}</h2>
-            <p>{{excerpt words="19"}}&hellip;</p>
-        </section>
-    </a>
-    {{/prev_post}}
-</aside> --}}
+  {{content}}
 
-<nav class="content-pagination">
-  <ul>
-    {{#prev_post}}
-    <li><a href="{{url}}">&larr; Older</a></li>
-    {{/prev_post}}
-    {{#next_post}}
-    <li><a href="{{url}}">Newer &rarr;</a></li>
-    {{/next_post}}
-  </ul>
-</nav>
+</article>
+
+
+{{/has}}
+
+
+{{#has tag="pastwork"}}
+<article>
+  <h1>{{title}}</h1>
+
+  <img src="{{image}}">
+  <h2>
+    <time class="post-date" datetime="{{date format="MMMM Do, YYYY"}}">{{date format="MMMM Do, YYYY"}}</time>
+  </h2>
+
+
+  {{content}}
+
+</article>
+{{/has}
+
+
+
 {{/post}}
