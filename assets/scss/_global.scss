@@ -25,12 +25,20 @@
 
 header.master-header {
   display: flex;
+  position: fixed;
+  width: 100%;
   flex-direction: column;
 }
 
 .master-header .heading {
-  background-color: color(white, 0, 0.9);
+  background-color: color(white, 0, 0.97);
   text-align: center;
+
+  .backdropfilter & {
+    background-color: color(white, 0, 0.92);
+    -webkit-backdrop-filter: blur(0.5rem);
+  }
+
 
   h1 {
     font-family: $fontstack-ui;
@@ -43,6 +51,7 @@ header.master-header {
 
   h1 a {
     color: color(brand-color-one);
+    transition: color $timing-transitions;
 
     &:hover {
       color: color(brand-color-one, 2);
@@ -53,9 +62,17 @@ header.master-header {
   }
 }
 
+
 .master-header nav {
-  background-color: color(white, 0, 0.6);
+  background-color: color(white, -2, 0.94);
+  border-bottom: 1px solid color(white, -3);
   padding: 1rem 5rem;
+
+  .backdropfilter & {
+    background-color: color(white, -2, .8);
+    -webkit-backdrop-filter: blur(0.4rem);
+    border-bottom: 1px solid color(white, -3);
+  }
 
   ul {
     display: flex;
@@ -72,9 +89,12 @@ header.master-header {
 
   ul li a {
     color: color(black, 0, 0.8);
+    transition: border $timing-transitions;
+    border-bottom: .1rem solid color(brand-color-two, 0, 0.0);
 
     &:hover {
       color: color(brand-color-two);
+      border-bottom: .1rem solid color(brand-color-two);
     }
 
     &:active {
@@ -96,6 +116,7 @@ header.master-header {
   min-height: 1rem;
   display: flex;
   flex-wrap: wrap;
+  padding-top: 10rem;
   padding-bottom: 4rem;
 }
 
@@ -107,6 +128,10 @@ header.master-header {
 
 =======================
 */
+
+footer {
+  background: color(white);
+}
 
 footer.master-footer {
   background: color(white);
@@ -190,6 +215,7 @@ footer .nightmode-section {
   font-weight: $font-bold;
   text-transform: uppercase;
   opacity: 0.6;
+  margin-bottom: 6rem;
   padding: .6rem 1.2rem;
 
   &:hover {
@@ -228,10 +254,8 @@ footer .nightmode-section {
 
 section.entry-directory {
   display: flex;
-  // outline: 1px solid red;
   flex-wrap: wrap;
   padding: 4rem 1rem;
-  // width: 100%;
 }
 
 
@@ -474,7 +498,28 @@ nav.content-pagination {
 /* ==============================
 /* =========================== */
 
+.workstudy {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  background-color: color(white);
+}
 
+.workstudy h1 {
+  width: 100%;
+  font-family: $fontstack-ui;
+  text-align: center;
+}
+
+.workstudy [alt^="SubheadingImage"] {
+
+}
+
+.workstudy [alt^="FullwidthImage"] {
+  width: 100%;
+  max-width: 1440px;
+}
 
 
 

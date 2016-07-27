@@ -14,7 +14,6 @@
 /* ==============================
 /* =========================== */
 
-
 /* ============= *\
 
     Master Heading
@@ -22,21 +21,34 @@
 \* ============= */
 
 .master-header .heading {
-  background-color: color(black, 0, 0.9);
+  background-color: color(black, 0, 0.98);
+
+  .backdropfilter & {
+    background-color: color(black, -1, 0.9);
+    -webkit-backdrop-filter: blur(0.8rem);
+  }
 }
 
 .master-header nav {
-  background-color: color(black, 1, 0.6);
+  background-color: color(black, 1, 0.98);
+  border-bottom: 1px solid color(black);
+
+  .backdropfilter & {
+    background-color: color(black, 0, 0.8);
+  }
 
   ul li a {
     color: color(white, 0, 0.4);
+    transition: color $timing-transitions, border-bottom-color $timing-transitions;
 
     &:hover {
-      color: color(brand-color-two);
+      color: color(brand-color-two, 2);
+      border-bottom-color: color(brand-color-two, 2);
     }
 
     &:active {
-      color: color(brand-color-two, -2);
+      color: color(brand-color-two);
+      border-bottom-color: color(brand-color-two);
     }
   }
 }
@@ -50,7 +62,7 @@
 /* =========================== */
 
 .page-content {
-  background: grayscale(black);
+  background: grayscale(1);
   color: color(white);
 }
 
@@ -63,7 +75,7 @@
 
 footer {
   background: color(black, 0, 0.9);
-  border-top-color: color(black, 1);
+  border-top-color: grayscale(1);
 }
 
 footer .availability p {
@@ -71,7 +83,7 @@ footer .availability p {
 }
 
 footer .footer-nav {
-  border-color: color(black, 1);
+  border-color: grayscale(1);
 }
 
 footer .footer-nav ul li a {
@@ -131,7 +143,7 @@ nav.content-pagination ul li a:hover {
 }
 
 article.entry-snippet p:after {
-  background: linear-gradient(to bottom, grayscale(black, 0.0), grayscale(black, 0.9) 100%);
+  background: linear-gradient(to bottom, grayscale(1, 0.0), grayscale(1, 0.9) 100%);
 }
 
 

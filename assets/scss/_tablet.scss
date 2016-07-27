@@ -23,12 +23,17 @@
 =======================
 */
 
+body {background: color(white, -2);}
 
 .master-header {
-  background: color(white, 0, 0.9);
+  background: color(white);
   padding: 1rem 0;
+  position: relative !important;
   flex-direction: row;
   width: 100%;
+  max-width: 144rem;
+  margin: 0 auto 0;
+  border-radius: .3rem .3rem 0 0;
 
   &-wrapper {
     display: flex;
@@ -48,8 +53,11 @@
 }
 
 .master-header .heading,
-.master-header nav {
-  background-color: transparent;
+.master-header nav,
+.master-header .backdropfilter.heading,
+.master-header .backdropfilter nav {
+  background-color: transparent !important;
+  -webkit-backdrop-filter: blur(0) !important;
   body.nightmode & {
     background-color: transparent;
   }
@@ -62,6 +70,7 @@
   flex-basis: auto;
   flex-grow: 1;
   padding: 0;
+  border-bottom-color: transparent !important;
 
   ul {
     min-height: 50px;
@@ -72,6 +81,20 @@
     }
   }
 
+}
+
+/*
+=======================
+
+    Main Content
+
+=======================
+*/
+
+.page-content {
+  background: color(white, -1);
+  max-width: 144rem;
+  margin: 0 auto;
 }
 
 
@@ -86,6 +109,16 @@
 
 footer {
   height: 24rem;
+  max-width: 144rem;
+  margin: 0 auto;
+  border-left: 1px solid color(white, -1);
+  border-right: 1px solid color(white, -1);
+  border-bottom: 1px solid color(white, -1);
+  border-radius: 0 0 .3rem .3rem;
+
+  body.nightmode & {
+    border-color: grayscale(1);
+  }
 }
 
 footer .footer-nav {
@@ -128,9 +161,8 @@ footer .footer-nav .secondary-footer-nav li {
 
 section.entry-directory {
   display: flex;
-  // outline: 1px solid red;
   flex-wrap: wrap;
-  padding: 4rem 1rem;
+  padding: 4rem 10rem;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -143,7 +175,11 @@ article.entry-snippet {
     text-align: center;
     background: color(white);
     border-radius: .6rem;
-    padding: 10rem 0;
+    padding: 10rem 1.6rem;
+    // margin-left: 10%;
+    margin-top: -10rem;
+    // margin-right: 10%;
+    margin-bottom: 6rem;
 
     body.nightmode & {
       background: color(black, -1);

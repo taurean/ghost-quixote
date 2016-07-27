@@ -2,7 +2,7 @@
 @import 'global';
 
 body.nightmode {
-  background: color(black, 0);
+  background: grayscale(black);
 
   @import 'nightmode';
 }
@@ -10,4 +10,16 @@ body.nightmode {
 
 @media all and (min-width: 680px) {
   @import 'tablet';
+}
+
+@media all and (min-width: 1440px) {
+
+  .master-header {
+    transition: margin-top $timing-transitions;
+    margin-top: 3rem;
+  }
+  footer {
+    transition: margin-bottom $timing-transitions;
+    margin-bottom: 3rem;
+  }
 }

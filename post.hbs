@@ -4,36 +4,46 @@
     the {{{body}}} of the default.hbs template, containing the blog header/footer. --}}
 
 {{!-- Everything inside the #post tags pulls data from the post --}}
+
+
+
+
+
 {{#post}}
 
 {{#has tag="writing"}}
 
-<article class="journal-entry">
+
+<article class="blog-entry">
+
+  <img class="featured-image" src="{{image}}">
+
   <h1 class="post-title">{{title}}</h1>
 
-  <img src="{{image}}">
-  <h2>
-    <time class="post-date" datetime="{{date format="MMMM Do, YYYY"}}">{{date format="MMMM Do, YYYY"}}</time>
-  </h2>
+<h2>
+<time class="post-date" datetime="{{date format="MMMM Do, YYYY"}}">{{date format="MMMM Do, YYYY"}}</time>
+</h2>
 
 
-  {{content}}
+{{content}}
 
 </article>
 
 
 {{/has}}
 
+
+
+
+
+
+{{!-- Case Study  --}}
+
+
+
 {{#has tag="workstudy"}}
 
-<article class="case-study">
-  <h1>{{title}}</h1>
-
-  <img src="{{image}}">
-  <h2>
-    <time datetime="{{date format="MMMM Do, YYYY"}}">{{date format="MMMM Do, YYYY"}}</time>
-  </h2>
-
+<article class="workstudy">
 
   {{content}}
 
