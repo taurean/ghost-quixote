@@ -57,7 +57,7 @@ body {background: color(white, -2);}
 .master-header .backdropfilter.heading,
 .master-header .backdropfilter nav {
   background-color: transparent !important;
-  -webkit-backdrop-filter: blur(0) !important;
+  -webkit-backdrop-filter: blur(0);
   body.nightmode & {
     background-color: transparent;
   }
@@ -95,6 +95,7 @@ body {background: color(white, -2);}
   background: color(white, -1);
   max-width: 144rem;
   margin: 0 auto;
+  padding-top: 0;
 }
 
 

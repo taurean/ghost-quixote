@@ -28,6 +28,8 @@ header.master-header {
   position: fixed;
   width: 100%;
   flex-direction: column;
+  z-index: 100;
+
 }
 
 .master-header .heading {
@@ -116,8 +118,9 @@ header.master-header {
   min-height: 1rem;
   display: flex;
   flex-wrap: wrap;
-  padding-top: 10rem;
+  padding-top: 9.8rem;
   padding-bottom: 4rem;
+  padding-bottom: 0rem;
 }
 
 
@@ -215,7 +218,7 @@ footer .nightmode-section {
   font-weight: $font-bold;
   text-transform: uppercase;
   opacity: 0.6;
-  margin-bottom: 6rem;
+  margin-bottom: 1.2rem;
   padding: .6rem 1.2rem;
 
   &:hover {
@@ -322,11 +325,9 @@ nav.content-pagination {
 
   ul {
     display: flex;
-    // justify-content: space-around;
 
     li {
       width: 50%;
-      // outline: 1px dotted red;
       font-size: $font-size-base;
       font-family: $fontstack-ui;
       text-transform: uppercase;
@@ -337,7 +338,6 @@ nav.content-pagination {
     li:first-of-type {
       text-align: right;
       margin-right: 10rem;
-      // margin-right: 0;
       margin-left: 0;
     }
 
@@ -503,22 +503,46 @@ nav.content-pagination {
   max-width: 1440px;
   margin: 0 auto;
   padding-bottom: 4rem;
+  padding-bottom: 0rem;
   background-color: color(white);
 }
 
 .workstudy h1 {
   width: 100%;
   font-family: $fontstack-ui;
+  font-weight: $font-normal;
+  color: color(brand-color-one);
   text-align: center;
+  margin: 4rem 0;
+}
+
+.workstudy p {
+    font-size: $font-size-h3;
+    font-family: $fontstack-ui;
+    width: 100%;
+    // max-width: 60rem;
+    padding: 0 2rem;
+    padding-top: 0;
+    margin: 0 auto 0 auto;
 }
 
 .workstudy [alt^="SubheadingImage"] {
-
+  max-width: 100%;
+  margin: 0 auto;
 }
 
-.workstudy [alt^="FullwidthImage"] {
+blockquote {
+  padding: 0;
+}
+
+blockquote p {
+  padding: 0 !important;
+}
+
+.workstudy blockquote p [alt^="FullwidthImage"] {
   width: 100%;
-  max-width: 1440px;
+  display: block;
+  padding: 0;
 }
 
 
