@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {{!-- Document Settings --}}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{!-- Page Meta --}}
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}" />
+
+    {{!-- Mobile Meta --}}
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    {{!-- Brand icon --}}
+    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+    {{!-- Styles'n'Scripts --}}
+    <script type="text/javascript" src="{{asset "js/modernizr.js"}}"></script>
+    <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+
+    {{!-- Ghost outputs important style and meta data with this tag --}}
+    {{!-- {{ghost_head}} --}}
+</head>
+{{!-- <body class="{{body_class}} nav-closed"> --}}
+<body>
+
+<div class="bg-container">
+  <div class="animation"></div>
+</div>
+
+
+
+<div class="privacy-wrapper">
+
+<main class="privacy-shell">
+  <h1>Maintenance Mode</h1>
+  <form class="privacy-form" method="post">
+    {{input_password}}
+    <input class="privacy-submit" type="submit" />
+
+  {{#if error}}
+     {{error.message}}
+  {{/if}}
+  </form>
+</main>
+
+</div>
+
+
+
+{{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+{{!-- Ghost outputs important scripts and data with this tag --}}
+{{ghost_foot}}
+{{!-- Fitvids makes video embeds responsive and awesome --}}
+<script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+
+</body>
+</html>
