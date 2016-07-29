@@ -35,14 +35,16 @@
 <div class="privacy-wrapper">
 
 <main class="privacy-shell">
-  <h1>Maintenance Mode</h1>
+  <h1>T—BRYANT</h1>
+  <p>Sorry! I'm currently in the process of implementing new improvements and features.</p>
   <form class="privacy-form" method="post">
     {{input_password}}
-    <input class="privacy-submit" type="submit" />
-
-  {{#if error}}
-     {{error.message}}
-  {{/if}}
+    <input class="btn privacy-submit" type="submit" value="Development Mode" />
+  <div class="privacy-error">
+    {{#if error}}
+       {{error.message}}
+    {{/if}}
+  </div>
   </form>
 </main>
 

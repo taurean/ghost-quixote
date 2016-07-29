@@ -182,3 +182,52 @@ article.entry-snippet p:after {
 *********************************
 /* ==============================
 /* =========================== */
+
+
+
+
+
+
+
+
+
+/* ==============================
+/* ==============================
+*********************************
+•••••••••••••••••••••••••••••••••
+
+#################################
+
+// Maintenance Mode Page
+
+#################################
+
+•••••••••••••••••••••••••••••••••
+*********************************
+/* ==============================
+/* =========================== */
+
+.animation {
+  background: linear-gradient(10deg, #096638 20%, #2D195A 40%, black 70%);
+}
+
+.privacy-shell {
+  background: grayscale(black);
+  border: .2rem solid color(black, 1, 0.5);
+
+  h1,
+  p {
+    color: grayscale(white);
+  }
+}
+
+
+.privacy-form input[type="password"] {
+  border-color: color(white, 0, 0.3);
+  color: grayscale(white);
+}
+
+.privacy-form input[type="password"]:hover,
+.privacy-form input[type="password"]:focus {
+  border-color: color(brand-color-two);
+}
