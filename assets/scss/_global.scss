@@ -373,9 +373,123 @@ nav.content-pagination {
 /* ==============================
 /* =========================== */
 
+.blog-entry {
+  background-color: grayscale(white);
+  margin: 0 auto;
+  max-width: 144rem;
+  width: 100%;
+  padding: 0;
+}
+
+.featured-image {
+  display: block;
+  max-width: 144rem;
+  width: 100%;
+}
+
+h1.post-title {
+  line-height: $line-height-heading;
+  font-size: 6rem;
+  display: inline-block;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 3rem 0;
+  color: color(brand-color-two);
+}
+
+h2 time.post-date {
+
+}
 
 
+.blog-entry {
 
+  p {
+    font-size: $font-size-base;
+    font-family: $fontstack-text;
+    padding: 0 2rem;
+    margin: 0 auto 2rem;
+    max-width: 80rem;
+    line-height: $line-height-base;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    display: block;
+    padding: 0 2rem;
+    margin: 0 auto .6rem;
+    max-width: 80rem;
+  }
+
+  h3,
+  h4 {
+    font-weight: $font-normal;
+  }
+
+  p + blockquote {
+    margin: 6rem 0;
+  }
+
+  blockquote + p {
+    margin-bottom: 0;
+  }
+
+  a:link,
+  a:visited {
+    font-style: italic;
+    display: inline-block;
+    // font-family: $fontstack-display;
+    color: color(brand-color-one);
+    animation: blinker 3s linear infinite;
+    padding: 0 .2rem;
+    background-image: linear-gradient(to top,
+    rgba(color(brand-color-one), 0) 10%,
+    rgba(color(brand-color-one), .5) 14%,
+    rgba(color(brand-color-one), .5) 14%,
+    rgba(color(brand-color-one), 0) 20%
+    );
+    border-radius: .3rem;
+    transition: all .125s ease;
+  }
+
+  a:hover {
+    background: color(brand-color-one, 0, 0.8);
+    color: color(white);
+  }
+}
+
+
+.blog-entry blockquote p [alt^="FullwidthImage"] {
+  width: 100%;
+  display: block;
+  padding: 0 !Important;
+}
+
+.blog-entry blockquote > p,
+.blog-entry blockquote p,
+.blog-entry blockquote > p > img {
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+
+.blog-entry figure {
+  width: 100%;
+  max-width: 144rem;
+
+  img {
+    width: 100%;
+    max-width: 144rem;
+  }
+}
+
+.blog-entry blockquote:empty {
+  color: red !important;
+}
 
 /* ==============================
 /* ==============================
@@ -396,7 +510,7 @@ nav.content-pagination {
 .featured-work {
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 4rem auto 4rem;
   display: block;
 }
 
@@ -502,10 +616,14 @@ nav.content-pagination {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding-bottom: 4rem;
   padding-bottom: 0rem;
   background-color: color(white);
 }
+
+blockquote {
+  padding: 0 !important;
+}
+
 
 .workstudy h1 {
   width: 100%;
@@ -520,31 +638,44 @@ nav.content-pagination {
     font-size: $font-size-h3;
     font-family: $fontstack-ui;
     width: 100%;
-    // max-width: 60rem;
+    max-width: 60rem;
     padding: 0 2rem;
     padding-top: 0;
     margin: 0 auto 0 auto;
 }
 
 .workstudy [alt^="SubheadingImage"] {
-  max-width: 100%;
-  margin: 0 auto;
+  margin: 8rem auto 1rem;
+  display: block;
+  max-width: 10rem;
+  width: 100%;
 }
 
-blockquote {
-  padding: 0;
+.workstudy h2 {
+  text-align: center;
+  display: block;
+  font-family: $fontstack-ui;
+  font-weight: $font-normal;
+  color: color(brand-color-one);
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 
-blockquote p {
-  padding: 0 !important;
-}
 
 .workstudy blockquote p [alt^="FullwidthImage"] {
   width: 100%;
   display: block;
-  padding: 0;
+  padding: 0 !Important;
 }
 
+.workstudy blockquote > p,
+.workstudy blockquote p,
+.workstudy blockquote > p > img {
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
 
 
 /* ==============================

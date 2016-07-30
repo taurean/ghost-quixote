@@ -578,6 +578,87 @@ nav.content-pagination {
 *********************************
 /* ==============================
 /* =========================== */
+.blog-entry {
+  background-color: white;
+  margin: 0 auto;
+  max-width: 144rem;
+  width: 100%;
+  padding: 0; }
+
+.featured-image {
+  display: block;
+  max-width: 144rem;
+  width: 100%; }
+
+h1.post-title {
+  line-height: 1.2;
+  font-size: 6rem;
+  display: inline-block;
+  width: 100%;
+  padding: 0 2rem;
+  margin: 3rem 0;
+  color: #1b3cf4; }
+
+.blog-entry p {
+  font-size: 1.6rem;
+  font-family: "TiemposText", Georgia, Times, "Times New Roman", serif;
+  padding: 0 2rem;
+  margin: 0 auto 2rem;
+  max-width: 80rem;
+  line-height: 1.6; }
+.blog-entry h2,
+.blog-entry h3,
+.blog-entry h4,
+.blog-entry h5,
+.blog-entry h6 {
+  display: block;
+  padding: 0 2rem;
+  margin: 0 auto .6rem;
+  max-width: 80rem; }
+.blog-entry h3,
+.blog-entry h4 {
+  font-weight: 400; }
+.blog-entry p + blockquote {
+  margin: 6rem 0; }
+.blog-entry blockquote + p {
+  margin-bottom: 0; }
+.blog-entry a:link,
+.blog-entry a:visited {
+  font-style: italic;
+  display: inline-block;
+  color: #d65196;
+  animation: blinker 3s linear infinite;
+  padding: 0 .2rem;
+  background-image: linear-gradient(to top, rgba(214, 81, 150, 0) 10%, rgba(214, 81, 150, 0.5) 14%, rgba(214, 81, 150, 0.5) 14%, rgba(214, 81, 150, 0) 20%);
+  border-radius: .3rem;
+  transition: all .125s ease; }
+.blog-entry a:hover {
+  background: rgba(214, 81, 150, 0.8);
+  color: white; }
+
+.blog-entry blockquote p [alt^="FullwidthImage"] {
+  width: 100%;
+  display: block;
+  padding: 0 !Important; }
+
+.blog-entry blockquote > p,
+.blog-entry blockquote p,
+.blog-entry blockquote > p > img {
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0; }
+
+.blog-entry figure {
+  width: 100%;
+  max-width: 144rem; }
+  .blog-entry figure img {
+    width: 100%;
+    max-width: 144rem; }
+
+.blog-entry blockquote:empty {
+  color: red !important; }
+
 /* ==============================
 /* ==============================
 *********************************
@@ -596,7 +677,7 @@ nav.content-pagination {
 .featured-work {
   width: 100%;
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 4rem auto 4rem;
   display: block; }
 
 .work-thumb {
@@ -675,9 +756,11 @@ nav.content-pagination {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding-bottom: 4rem;
   padding-bottom: 0rem;
   background-color: white; }
+
+blockquote {
+  padding: 0 !important; }
 
 .workstudy h1 {
   width: 100%;
@@ -691,24 +774,38 @@ nav.content-pagination {
   font-size: 1.8rem;
   font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
   width: 100%;
+  max-width: 60rem;
   padding: 0 2rem;
   padding-top: 0;
   margin: 0 auto 0 auto; }
 
 .workstudy [alt^="SubheadingImage"] {
-  max-width: 100%;
-  margin: 0 auto; }
+  margin: 8rem auto 1rem;
+  display: block;
+  max-width: 10rem;
+  width: 100%; }
 
-blockquote {
-  padding: 0; }
-
-blockquote p {
-  padding: 0 !important; }
+.workstudy h2 {
+  text-align: center;
+  display: block;
+  font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  color: #d65196;
+  text-transform: uppercase;
+  margin-bottom: 2rem; }
 
 .workstudy blockquote p [alt^="FullwidthImage"] {
   width: 100%;
   display: block;
-  padding: 0; }
+  padding: 0 !Important; }
+
+.workstudy blockquote > p,
+.workstudy blockquote p,
+.workstudy blockquote > p > img {
+  padding: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0; }
 
 /* ==============================
 /* ==============================
@@ -1014,6 +1111,10 @@ body.nightmode {
     color: white; }
   body.nightmode article.entry-snippet p:after {
     background: linear-gradient(to bottom, rgba(35, 35, 37, 0), rgba(35, 35, 37, 0.9) 100%); }
+  body.nightmode .blog-entry {
+    background-color: #151515; }
+  body.nightmode .workstudy {
+    background-color: #151515; }
   body.nightmode .animation {
     background: linear-gradient(10deg, #096638 20%, #2D195A 40%, black 70%); }
   body.nightmode .privacy-shell {
@@ -1176,7 +1277,6 @@ body.nightmode {
     background: white;
     border-radius: .6rem;
     padding: 10rem 1.6rem;
-    margin-top: -10rem;
     margin-bottom: 6rem; }
     body.nightmode article.entry-snippet:first-child {
       background: #151515; }
