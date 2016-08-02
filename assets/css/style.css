@@ -807,6 +807,13 @@ blockquote {
   max-width: 100%;
   margin: 0; }
 
+.workstudy figure {
+  width: 100%;
+  max-width: 144rem; }
+  .workstudy figure img {
+    width: 100%;
+    max-width: 144rem; }
+
 /* ==============================
 /* ==============================
 *********************************
