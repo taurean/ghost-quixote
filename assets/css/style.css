@@ -1069,6 +1069,8 @@ body.nightmode {
   *********************************
   /* ==============================
   /* =========================== */ }
+  body.nightmode *, body.nightmode :before, body.nightmode :after, body.nightmode *:before, body.nightmode *:after {
+    transition: background 125ms, color 125ms, border 125ms; }
   body.nightmode .master-header .heading {
     background-color: rgba(21, 21, 21, 0.98); }
     .backdropfilter body.nightmode .master-header .heading {

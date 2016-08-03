@@ -4,6 +4,14 @@
 body.nightmode {
   background: grayscale(black);
 
+  & *,
+  & :before,
+  & :after,
+  & *:before,
+  & *:after {
+    transition: background $timing-transitions, color $timing-transitions, border $timing-transitions;
+  }
+
   @import 'nightmode';
 }
 
