@@ -1,5 +1,4 @@
 @import 'no-frills/no-frills-importer';
-@import 'global';
 
 body.nightmode {
   background: grayscale(black);
@@ -14,6 +13,10 @@ body.nightmode {
 
   @import 'nightmode';
 }
+
+
+@import 'global';
+
 
 
 @media all and (min-width: 680px) {

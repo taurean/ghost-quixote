@@ -293,6 +293,175 @@ body.nightmode .btn {
   body.nightmode .btn:hover {
     background: #e8e8e8; }
 
+body.nightmode {
+  background: #09090b;
+  /* ==============================
+  /* ==============================
+  *********************************
+  •••••••••••••••••••••••••••••••••
+  
+  #################################
+  
+  // Global Styles
+  
+  #################################
+  
+  •••••••••••••••••••••••••••••••••
+  *********************************
+  /* ==============================
+  /* =========================== */
+  /* ============= *\
+  
+      Master Heading
+  
+  \* ============= */
+  /* ==============================
+  /* ==============================
+  
+  // Main Content
+  
+  /* ==============================
+  /* =========================== */
+  /* ============= *\
+  
+      Master Footer
+  
+  \* ============= */
+  /* ==============================
+  /* ==============================
+  *********************************
+  •••••••••••••••••••••••••••••••••
+  
+  #################################
+  
+  // Blog Posts Directory
+  
+  #################################
+  
+  •••••••••••••••••••••••••••••••••
+  *********************************
+  /* ==============================
+  /* =========================== */
+  /* ============= *\
+  
+  Individual Entries
+  
+  \* ============= */
+  /* ==============================
+  /* ==============================
+  *********************************
+  •••••••••••••••••••••••••••••••••
+  
+  #################################
+  
+  // Individual Blog Post
+  
+  #################################
+  
+  •••••••••••••••••••••••••••••••••
+  *********************************
+  /* ==============================
+  /* =========================== */
+  /* ==============================
+  /* ==============================
+  *********************************
+  •••••••••••••••••••••••••••••••••
+  
+  #################################
+  
+  // Individual Case Study
+  
+  #################################
+  
+  •••••••••••••••••••••••••••••••••
+  *********************************
+  /* ==============================
+  /* =========================== */
+  /* ==============================
+  /* ==============================
+  *********************************
+  •••••••••••••••••••••••••••••••••
+  
+  #################################
+  
+  // Maintenance Mode Page
+  
+  #################################
+  
+  •••••••••••••••••••••••••••••••••
+  *********************************
+  /* ==============================
+  /* =========================== */ }
+  body.nightmode *, body.nightmode :before, body.nightmode :after, body.nightmode *:before, body.nightmode *:after {
+    transition: background 125ms, color 125ms, border 125ms; }
+  body.nightmode .master-header .heading {
+    background-color: rgba(21, 21, 21, 0.98); }
+    .backdropfilter body.nightmode .master-header .heading {
+      background-color: rgba(21, 21, 21, 0.9);
+      -webkit-backdrop-filter: blur(0.8rem); }
+  body.nightmode .master-header nav {
+    background-color: rgba(44, 44, 43, 0.98);
+    border-bottom: 1px solid #151515; }
+    .backdropfilter body.nightmode .master-header nav {
+      background-color: rgba(21, 21, 21, 0.8); }
+    body.nightmode .master-header nav ul li a {
+      color: rgba(255, 255, 255, 0.4);
+      transition: color 125ms, border-bottom-color 125ms; }
+      body.nightmode .master-header nav ul li a:hover {
+        color: #4861f2;
+        border-bottom-color: #4861f2; }
+      body.nightmode .master-header nav ul li a:active {
+        color: #1b3cf4;
+        border-bottom-color: #1b3cf4; }
+  body.nightmode .page-content {
+    background: #232325;
+    color: white; }
+  body.nightmode footer {
+    background: rgba(21, 21, 21, 0.9);
+    border-top-color: #232325; }
+  body.nightmode footer .availability p {
+    color: white; }
+  body.nightmode footer .footer-nav {
+    border-color: #232325; }
+  body.nightmode footer .footer-nav ul li a {
+    color: white; }
+  body.nightmode footer .copyright {
+    color: white; }
+  body.nightmode .nightmode-toggle {
+    background: #192365;
+    border-color: #192365;
+    color: white;
+    opacity: 1; }
+    body.nightmode .nightmode-toggle:hover {
+      background: rgba(25, 35, 101, 0.2); }
+  body.nightmode article.entry-snippet {
+    color: #e8e8e8; }
+  body.nightmode nav.content-pagination ul li a:link,
+  body.nightmode nav.content-pagination ul li a:visited {
+    color: rgba(255, 255, 255, 0.6); }
+  body.nightmode nav.content-pagination ul li a:hover {
+    color: white; }
+  body.nightmode article.entry-snippet p:after {
+    background: linear-gradient(to bottom, rgba(35, 35, 37, 0), rgba(35, 35, 37, 0.9) 100%); }
+  body.nightmode .blog-entry {
+    background-color: #151515; }
+  body.nightmode .workstudy {
+    background-color: #151515; }
+  body.nightmode .animation {
+    background: linear-gradient(10deg, #096638 20%, #2D195A 40%, black 70%); }
+  body.nightmode .privacy-shell {
+    background: #09090b;
+    border: 0.2rem solid rgba(44, 44, 43, 0.5); }
+    body.nightmode .privacy-shell h1,
+    body.nightmode .privacy-shell p {
+      color: white; }
+  body.nightmode .privacy-form input[type="password"] {
+    border-color: rgba(255, 255, 255, 0.3);
+    color: white; }
+  body.nightmode .privacy-form input[type="password"]:hover,
+  body.nightmode .privacy-form input[type="password"]:focus {
+    border-color: #1b3cf4; }
+
 /* ==============================
 /* ==============================
 *********************************
@@ -969,175 +1138,6 @@ section.work-archive {
     margin-bottom: 1rem;
     text-align: center;
     color: #da1515; }
-
-body.nightmode {
-  background: #09090b;
-  /* ==============================
-  /* ==============================
-  *********************************
-  •••••••••••••••••••••••••••••••••
-  
-  #################################
-  
-  // Global Styles
-  
-  #################################
-  
-  •••••••••••••••••••••••••••••••••
-  *********************************
-  /* ==============================
-  /* =========================== */
-  /* ============= *\
-  
-      Master Heading
-  
-  \* ============= */
-  /* ==============================
-  /* ==============================
-  
-  // Main Content
-  
-  /* ==============================
-  /* =========================== */
-  /* ============= *\
-  
-      Master Footer
-  
-  \* ============= */
-  /* ==============================
-  /* ==============================
-  *********************************
-  •••••••••••••••••••••••••••••••••
-  
-  #################################
-  
-  // Blog Posts Directory
-  
-  #################################
-  
-  •••••••••••••••••••••••••••••••••
-  *********************************
-  /* ==============================
-  /* =========================== */
-  /* ============= *\
-  
-  Individual Entries
-  
-  \* ============= */
-  /* ==============================
-  /* ==============================
-  *********************************
-  •••••••••••••••••••••••••••••••••
-  
-  #################################
-  
-  // Individual Blog Post
-  
-  #################################
-  
-  •••••••••••••••••••••••••••••••••
-  *********************************
-  /* ==============================
-  /* =========================== */
-  /* ==============================
-  /* ==============================
-  *********************************
-  •••••••••••••••••••••••••••••••••
-  
-  #################################
-  
-  // Individual Case Study
-  
-  #################################
-  
-  •••••••••••••••••••••••••••••••••
-  *********************************
-  /* ==============================
-  /* =========================== */
-  /* ==============================
-  /* ==============================
-  *********************************
-  •••••••••••••••••••••••••••••••••
-  
-  #################################
-  
-  // Maintenance Mode Page
-  
-  #################################
-  
-  •••••••••••••••••••••••••••••••••
-  *********************************
-  /* ==============================
-  /* =========================== */ }
-  body.nightmode *, body.nightmode :before, body.nightmode :after, body.nightmode *:before, body.nightmode *:after {
-    transition: background 125ms, color 125ms, border 125ms; }
-  body.nightmode .master-header .heading {
-    background-color: rgba(21, 21, 21, 0.98); }
-    .backdropfilter body.nightmode .master-header .heading {
-      background-color: rgba(21, 21, 21, 0.9);
-      -webkit-backdrop-filter: blur(0.8rem); }
-  body.nightmode .master-header nav {
-    background-color: rgba(44, 44, 43, 0.98);
-    border-bottom: 1px solid #151515; }
-    .backdropfilter body.nightmode .master-header nav {
-      background-color: rgba(21, 21, 21, 0.8); }
-    body.nightmode .master-header nav ul li a {
-      color: rgba(255, 255, 255, 0.4);
-      transition: color 125ms, border-bottom-color 125ms; }
-      body.nightmode .master-header nav ul li a:hover {
-        color: #4861f2;
-        border-bottom-color: #4861f2; }
-      body.nightmode .master-header nav ul li a:active {
-        color: #1b3cf4;
-        border-bottom-color: #1b3cf4; }
-  body.nightmode .page-content {
-    background: #232325;
-    color: white; }
-  body.nightmode footer {
-    background: rgba(21, 21, 21, 0.9);
-    border-top-color: #232325; }
-  body.nightmode footer .availability p {
-    color: white; }
-  body.nightmode footer .footer-nav {
-    border-color: #232325; }
-  body.nightmode footer .footer-nav ul li a {
-    color: white; }
-  body.nightmode footer .copyright {
-    color: white; }
-  body.nightmode .nightmode-toggle {
-    background: #192365;
-    border-color: #192365;
-    color: white;
-    opacity: 1; }
-    body.nightmode .nightmode-toggle:hover {
-      background: rgba(25, 35, 101, 0.2); }
-  body.nightmode article.entry-snippet {
-    color: #e8e8e8; }
-  body.nightmode nav.content-pagination ul li a:link,
-  body.nightmode nav.content-pagination ul li a:visited {
-    color: rgba(255, 255, 255, 0.6); }
-  body.nightmode nav.content-pagination ul li a:hover {
-    color: white; }
-  body.nightmode article.entry-snippet p:after {
-    background: linear-gradient(to bottom, rgba(35, 35, 37, 0), rgba(35, 35, 37, 0.9) 100%); }
-  body.nightmode .blog-entry {
-    background-color: #151515; }
-  body.nightmode .workstudy {
-    background-color: #151515; }
-  body.nightmode .animation {
-    background: linear-gradient(10deg, #096638 20%, #2D195A 40%, black 70%); }
-  body.nightmode .privacy-shell {
-    background: #09090b;
-    border: 0.2rem solid rgba(44, 44, 43, 0.5); }
-    body.nightmode .privacy-shell h1,
-    body.nightmode .privacy-shell p {
-      color: white; }
-  body.nightmode .privacy-form input[type="password"] {
-    border-color: rgba(255, 255, 255, 0.3);
-    color: white; }
-  body.nightmode .privacy-form input[type="password"]:hover,
-  body.nightmode .privacy-form input[type="password"]:focus {
-    border-color: #1b3cf4; }
 
 @media all and (min-width: 680px) {
   /* ==============================
