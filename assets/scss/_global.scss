@@ -435,13 +435,6 @@ h2 time.post-date {
     font-weight: $font-normal;
   }
 
-  p + blockquote {
-    margin: 6rem 0;
-  }
-
-  blockquote + p {
-    margin-bottom: 0;
-  }
 
   a:link,
   a:visited {
@@ -467,22 +460,6 @@ h2 time.post-date {
   }
 }
 
-
-.blog-entry blockquote p [alt^="FullwidthImage"] {
-  width: 100%;
-  display: block;
-  padding: 0 !Important;
-}
-
-.blog-entry blockquote > p,
-.blog-entry blockquote p,
-.blog-entry blockquote > p > img {
-  padding: 0;
-  width: 100%;
-  max-width: 100%;
-  margin: 0;
-}
-
 .blog-entry figure {
   width: 100%;
   max-width: 144rem;
@@ -493,8 +470,47 @@ h2 time.post-date {
   }
 }
 
-.blog-entry blockquote:empty {
-  color: red !important;
+.blog-entry {
+  figure + p {
+    margin-top: 4rem;
+  }
+}
+
+.blog-entry ul {
+  display: block;
+  list-style-type: circle;
+  padding: 0 3rem;
+  margin: 1rem auto;
+  width: calc(100% - 5rem);
+
+  & li {
+    width: 100%;
+    padding: 0;
+    font-size: $font-size-base;
+    font-family: $fontstack-text;
+    padding: 0 .6rem;
+    margin: 0 auto .6rem;
+    max-width: 80rem;
+    line-height: $line-height-base;
+  }
+}
+
+.blog-entry ol {
+  display: block;
+  padding: 0 3rem;
+  margin: 1rem auto;
+  width: calc(100% - 5rem);
+
+  li {
+    width: 100%;
+    padding: 0;
+    font-size: $font-size-base;
+    font-family: $fontstack-ui;
+    padding: 0 .6rem;
+    margin: 0 auto .6rem;
+    max-width: 80rem;
+    line-height: $line-height-base;
+  }
 }
 
 /* ==============================
