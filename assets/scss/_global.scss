@@ -389,16 +389,22 @@ nav.content-pagination {
 
 h1.post-title {
   line-height: $line-height-heading;
-  font-size: 6rem;
+  font-size: 4.8rem;
   display: inline-block;
   width: 100%;
   padding: 0 2rem;
-  margin: 3rem 0;
+  margin: 3rem 0 1rem;
   color: color(brand-color-two);
 }
 
 h2 time.post-date {
-
+  font-family: $fontstack-ui;
+  font-weight: $font-normal;
+  font-size: $font-size-h3;
+  opacity: 0.4;
+  display: block;
+  margin-bottom: 2rem;
+  letter-spacing: .1ex;
 }
 
 

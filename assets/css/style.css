@@ -761,12 +761,21 @@ nav.content-pagination {
 
 h1.post-title {
   line-height: 1.2;
-  font-size: 6rem;
+  font-size: 4.8rem;
   display: inline-block;
   width: 100%;
   padding: 0 2rem;
-  margin: 3rem 0;
+  margin: 3rem 0 1rem;
   color: #1b3cf4; }
+
+h2 time.post-date {
+  font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  opacity: 0.4;
+  display: block;
+  margin-bottom: 2rem;
+  letter-spacing: .1ex; }
 
 .blog-entry p {
   font-size: 1.6rem;
