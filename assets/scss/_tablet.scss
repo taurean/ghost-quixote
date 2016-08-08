@@ -241,6 +241,30 @@ article.entry-snippet {
 /* =========================== */
 
 
+.blog-entry h1.post-title {
+  line-height: $line-height-heading;
+  font-size: 8rem;
+  display: block;
+  width: 100%;
+  max-width: 100rem;
+  padding: 0 2rem;
+  margin: 3rem auto;
+  color: color(brand-color-two);
+}
+
+.blog-entry ul {
+  margin: 0 auto;
+  padding: 0 4rem;
+  width: 100%;
+  max-width: 80rem;
+
+  li {
+    padding: 0;
+    margin: 0 0 2rem;
+  }
+}
+
+
 
 /* ==============================
 /* ==============================
