@@ -63,11 +63,11 @@
 // Night Mode
 
  window.onload = function(){
-   var currentTime = new Date().getHours();
-   if (currentTime < (6))
-     document.body.classList.add('nightmode');
-   if (currentTime > (6+12))
-     document.body.classList.add('nightmode');
+  //  var currentTime = new Date().getHours();
+  //  if (currentTime < (6))
+  //    document.body.classList.add('nightmode');
+  //  if (currentTime > (6+12))
+  //    document.body.classList.add('nightmode');
 
    var toggleButton = document.getElementById('nightmode-toggle');
    function handleToggle() {
