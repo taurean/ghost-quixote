@@ -835,6 +835,19 @@ h2 time.post-date {
     padding: .6rem 1.2rem;
     background-color: rgba(255, 255, 255, 0.8);
     line-height: 1.6; }
+    .blog-entry figure figcaption a:link,
+    .blog-entry figure figcaption a:visited {
+      font-style: italic;
+      display: inline-block;
+      color: #1b3cf4;
+      animation: blinker 3s linear infinite;
+      padding: 0 .2rem;
+      background-image: linear-gradient(to top, rgba(27, 60, 244, 0) 10%, rgba(27, 60, 244, 0.5) 14%, rgba(27, 60, 244, 0.5) 14%, rgba(27, 60, 244, 0) 20%);
+      border-radius: .3rem;
+      transition: all .125s ease; }
+    .blog-entry figure figcaption a:hover {
+      background: rgba(27, 60, 244, 0.8);
+      color: white; }
     .backdropfilter .blog-entry figure figcaption {
       background-color: rgba(255, 255, 255, 0.6);
       -webkit-backdrop-filter: blur(0.5rem); }
@@ -925,16 +938,17 @@ h2 time.post-date {
 .featured-work {
   width: 100%;
   max-width: 1440px;
-  margin: 4rem auto 4rem;
+  margin: 0 auto;
+  padding: 0;
   display: block; }
 
 .work-thumb {
   line-height: 0.8;
+  margin-top: 0;
   display: block;
   position: relative;
   max-width: 100%;
   background-image: none;
-  border-radius: 3px;
   background: #151515; }
   .work-thumb-title {
     position: absolute;
@@ -947,10 +961,6 @@ h2 time.post-date {
     font-weight: normal;
     letter-spacing: .1ex;
     padding-bottom: 0.4rem; }
-  .work-thumb:nth-of-type(even) .work-thumb-title {
-    right: 1rem;
-    left: inherit;
-    text-align: right; }
   .work-thumb:hover .work-thumb-img {
     -webkit-filter: #232325 brightness(0.3);
     -moz-filter: #232325 brightness(0.3);
@@ -1006,9 +1016,8 @@ h2 time.post-date {
   margin: 0 auto;
   padding-bottom: 0rem;
   background-color: white; }
-
-blockquote {
-  padding: 0 !important; }
+  .workstudy figure:first-of-type {
+    margin-top: 0; }
 
 .workstudy h1 {
   width: 100%;
@@ -1027,40 +1036,80 @@ blockquote {
   padding-top: 0;
   margin: 0 auto 0 auto; }
 
-.workstudy [alt^="SubheadingImage"] {
-  margin: 8rem auto 1rem;
-  display: block;
-  max-width: 10rem;
-  width: 100%; }
-
-.workstudy h2 {
+.workstudy h2,
+.workstudy h3,
+.workstudy h4 {
   text-align: center;
   display: block;
   font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   color: #d65196;
   text-transform: uppercase;
-  margin-bottom: 2rem; }
+  margin: 2rem 0; }
 
-.workstudy blockquote p [alt^="FullwidthImage"] {
+.workstudy figure.fullwidth {
   width: 100%;
-  display: block;
-  padding: 0 !Important; }
-
-.workstudy blockquote > p,
-.workstudy blockquote p,
-.workstudy blockquote > p > img {
-  padding: 0;
-  width: 100%;
-  max-width: 100%;
-  margin: 0; }
-
-.workstudy figure {
-  width: 100%;
-  max-width: 144rem; }
-  .workstudy figure img {
+  max-width: 144rem;
+  margin: 8rem 0;
+  position: relative; }
+  .workstudy figure.fullwidth img {
     width: 100%;
     max-width: 144rem; }
+.workstudy figure.subheading img {
+  margin: 8rem auto 1rem;
+  display: block;
+  max-width: 10rem;
+  width: 100%; }
+.workstudy figure.doubleimage {
+  width: 100%;
+  max-width: 144rem;
+  margin: 8rem 0;
+  display: flex;
+  flex-wrap: wrap; }
+  .workstudy figure.doubleimage img {
+    display: block;
+    width: 100%; }
+.workstudy figure figcaption {
+  font-size: 1.6rem;
+  font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  text-align: center;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  border-radius: .3rem;
+  display: inline-block;
+  padding: .6rem 1.2rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6; }
+  .workstudy figure figcaption a:link,
+  .workstudy figure figcaption a:visited {
+    font-style: italic;
+    font-weight: 500;
+    display: inline-block;
+    color: #1b3cf4;
+    animation: blinker 3s linear infinite;
+    padding: 0 .2rem;
+    background-image: linear-gradient(to top, rgba(27, 60, 244, 0) 10%, rgba(27, 60, 244, 0.5) 14%, rgba(27, 60, 244, 0.5) 14%, rgba(27, 60, 244, 0) 20%);
+    border-radius: .3rem;
+    transition: all .125s ease; }
+  .workstudy figure figcaption a:hover {
+    background: rgba(27, 60, 244, 0.8);
+    color: white; }
+  .backdropfilter .workstudy figure figcaption {
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(0.5rem); }
+
+.workstudy figure.fullwidth + figure.fullwidth {
+  margin-top: -8rem; }
+
+.workstudy p + h2 {
+  margin-top: 8rem;
+  margin-bottom: -4rem; }
+.workstudy figure[not="."] + h2 {
+  outline: 1px solid red;
+  margin-top: -4rem; }
+.workstudy figure:first-of-type {
+  margin-top: 0; }
 
 /* ==============================
 /* ==============================
@@ -1440,13 +1489,14 @@ section.work-archive {
   *********************************
   /* ==============================
   /* =========================== */
+  .featured-work {
+    display: flex;
+    flex-wrap: wrap; }
+
   .work-thumb {
     display: inline-block;
-    margin-bottom: 1rem;
-    width: calc(50% - 1rem);
-    margin-right: 1rem; }
-    .work-thumb:first-of-type {
-      margin-top: 4rem; }
+    width: 50%;
+    margin: 0; }
     .work-thumb:nth-of-type(even) {
       margin-right: 0; }
       .work-thumb:nth-of-type(even) .work-thumb-title {
@@ -1454,9 +1504,26 @@ section.work-archive {
         right: inherit;
         text-align: left; }
     .work-thumb:last-of-type:nth-of-type(odd) {
-      margin: 0 auto 2rem auto;
       width: 50%;
-      display: block; } }
+      display: block; }
+
+  /* ==============================
+  /* ==============================
+  *********************************
+  •••••••••••••••••••••••••••••••••
+  
+  #################################
+  
+  // Individual Case Study
+  
+  #################################
+  
+  •••••••••••••••••••••••••••••••••
+  *********************************
+  /* ==============================
+  /* =========================== */
+  .workstudy figure.doubleimage img {
+    width: 50%; } }
 @media all and (min-width: 1440px) {
   .master-header {
     transition: margin-top 125ms;

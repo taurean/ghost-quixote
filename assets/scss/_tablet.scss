@@ -281,15 +281,18 @@ article.entry-snippet {
 *********************************
 /* ==============================
 /* =========================== */
+.featured-work {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .work-thumb {
   display: inline-block;
-  margin-bottom: 1rem;
-  width: calc(50% - 1rem);
-  margin-right: 1rem;
+  width:50%;
+  margin: 0;
 
   &:first-of-type {
-    margin-top: 4rem;
+    // margin-top: 4rem;
   }
 
   &:nth-of-type(even) {
@@ -303,8 +306,29 @@ article.entry-snippet {
   }
 
   &:last-of-type:nth-of-type(odd) {
-    margin: 0 auto 2rem auto;
+    // margin: 0 auto 2rem auto;
     width: 50%;
     display: block;
   }
+}
+
+/* ==============================
+/* ==============================
+*********************************
+•••••••••••••••••••••••••••••••••
+
+#################################
+
+// Individual Case Study
+
+#################################
+
+•••••••••••••••••••••••••••••••••
+*********************************
+/* ==============================
+/* =========================== */
+
+
+.workstudy figure.doubleimage img {
+  width: 50%;
 }
