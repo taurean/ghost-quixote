@@ -645,15 +645,26 @@ h2 time.post-date {
 
   &-title {
     position: absolute;
-  	top: 1.6rem;
+    top: 1.6rem;
+  	top: 0;
   	left: 1rem;
+  	left: 0;
+    width: 100%;
   	z-index: 5;
     color: color(white);
     font-size: $font-size-h2;
     font-family: $fontstack-ui;
     font-weight: normal;
     letter-spacing: .1ex;
-    padding-bottom: 0.4rem;
+    padding: 1.6rem 0 1.6rem 1rem;
+    // outline: 1px solid red;
+    // background: color(black, 0, 0.8);
+
+    .backdropfilter & {
+      background-color: color(black, 0, 0.0);
+      -webkit-backdrop-filter: blur(1rem);
+      border-bottom: .1rem solid color(black, 0, 0.8);
+    }
 
   }
 
@@ -702,8 +713,7 @@ h2 time.post-date {
 
   &:hover {
     .work-thumb-title {
-      color: color(brand-color-one);
-      border-bottom: .2rem solid color(brand-color-one, -2, 0.5);
+      color: color(brand-color-two);
     }
 
     figure{
