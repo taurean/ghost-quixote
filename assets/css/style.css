@@ -7,11 +7,11 @@
   10% {
     opacity: 1.0; }
   20% {
-    opacity: 0.9; }
+    opacity: 0.95; }
   50% {
-    opacity: 0.7; }
+    opacity: 0.8; }
   80% {
-    opacity: 0.9; }
+    opacity: 0.95; }
   90% {
     opacity: 1.0; }
   100% {
@@ -408,11 +408,11 @@ body.nightmode {
       color: rgba(255, 255, 255, 0.4);
       transition: color 125ms, border-bottom-color 125ms; }
       body.nightmode .master-header nav ul li a:hover {
-        color: #4861f2;
-        border-bottom-color: #4861f2; }
+        color: #88ccc2;
+        border-bottom-color: #88ccc2; }
       body.nightmode .master-header nav ul li a:active {
-        color: #1b3cf4;
-        border-bottom-color: #1b3cf4; }
+        color: #6ac1b8;
+        border-bottom-color: #6ac1b8; }
   body.nightmode .page-content {
     background: #232325;
     color: white; }
@@ -428,12 +428,12 @@ body.nightmode {
   body.nightmode footer .copyright {
     color: white; }
   body.nightmode .nightmode-toggle {
-    background: #192365;
-    border-color: #192365;
+    background: #355150;
+    border-color: #355150;
     color: white;
     opacity: 1; }
     body.nightmode .nightmode-toggle:hover {
-      background: rgba(25, 35, 101, 0.2); }
+      background: rgba(53, 81, 80, 0.2); }
   body.nightmode article.entry-snippet {
     color: #e8e8e8; }
   body.nightmode nav.content-pagination ul li a:link,
@@ -445,13 +445,31 @@ body.nightmode {
     background: linear-gradient(to bottom, rgba(35, 35, 37, 0), rgba(35, 35, 37, 0.9) 100%); }
   body.nightmode .blog-entry {
     background-color: #151515; }
+    body.nightmode .blog-entry cite {
+      color: #6ac1b8;
+      opacity: 0.8; }
+    body.nightmode .blog-entry blockquote {
+      border-color: #444240; }
+  body.nightmode .blog-entry pre code {
+    background: rgba(44, 44, 43, 0.5);
+    border: 1px solid #444240;
+    color: #6ac1b8; }
   body.nightmode .blog-entry figure figcaption {
     background-color: rgba(21, 21, 21, 0.85); }
     .backdropfilter body.nightmode .blog-entry figure figcaption {
       background-color: rgba(21, 21, 21, 0.5);
-      -webkit-backdrop-filter: blur(0.5rem); }
+      -webkit-backdrop-filter: blur(1rem); }
+      .backdropfilter body.nightmode .blog-entry figure figcaption a {
+        font-style: normal; }
   body.nightmode .workstudy {
     background-color: #151515; }
+  body.nightmode .workstudy figure figcaption {
+    background-color: rgba(21, 21, 21, 0.85); }
+    .backdropfilter body.nightmode .workstudy figure figcaption {
+      background-color: rgba(21, 21, 21, 0.5);
+      -webkit-backdrop-filter: blur(1rem); }
+      .backdropfilter body.nightmode .workstudy figure figcaption a {
+        font-style: normal; }
   body.nightmode .animation {
     background: linear-gradient(10deg, #096638 20%, #2D195A 40%, black 70%); }
   body.nightmode .privacy-shell {
@@ -465,7 +483,7 @@ body.nightmode {
     color: white; }
   body.nightmode .privacy-form input[type="password"]:hover,
   body.nightmode .privacy-form input[type="password"]:focus {
-    border-color: #1b3cf4; }
+    border-color: #6ac1b8; }
 
 /* ==============================
 /* ==============================
@@ -537,12 +555,12 @@ header.master-header {
   .master-header nav ul li a {
     color: rgba(21, 21, 21, 0.8);
     transition: border 125ms;
-    border-bottom: 0.1rem solid rgba(27, 60, 244, 0); }
+    border-bottom: 0.1rem solid rgba(106, 193, 184, 0); }
     .master-header nav ul li a:hover {
-      color: #1b3cf4;
-      border-bottom: 0.1rem solid #1b3cf4; }
+      color: #6ac1b8;
+      border-bottom: 0.1rem solid #6ac1b8; }
     .master-header nav ul li a:active {
-      color: #1a34c8; }
+      color: #5a9f98; }
 
 /*
 =======================
@@ -628,10 +646,10 @@ footer .nightmode-section {
   text-align: center; }
 
 .nightmode-toggle {
-  background: rgba(25, 35, 101, 0.2);
-  border: 0.1rem solid #1a34c8;
+  background: rgba(53, 81, 80, 0.2);
+  border: 0.1rem solid #5a9f98;
   border-radius: .3rem;
-  color: #192365;
+  color: #355150;
   cursor: pointer;
   font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1rem;
@@ -642,8 +660,8 @@ footer .nightmode-section {
   margin-bottom: 1.2rem;
   padding: .6rem 1.2rem; }
   .nightmode-toggle:hover {
-    background: #192365;
-    border-color: #192365;
+    background: #355150;
+    border-color: #355150;
     color: white; }
 
 /* ==============================
@@ -754,6 +772,7 @@ nav.content-pagination {
 /* =========================== */
 .blog-entry {
   background-color: white;
+  margin: -4.5rem auto 0;
   margin: 0 auto;
   max-width: 144rem;
   width: 100%;
@@ -761,6 +780,7 @@ nav.content-pagination {
 
 .featured-image {
   display: block;
+  margin-top: -4.5rem;
   max-width: 144rem;
   width: 100%; }
 
@@ -770,8 +790,8 @@ h1.post-title {
   display: inline-block;
   width: 100%;
   padding: 0 2rem;
-  margin: 3rem 0 1rem;
-  color: #1b3cf4; }
+  margin: 5rem 0 1rem;
+  color: #6ac1b8; }
 
 h2 time.post-date {
   font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -803,7 +823,6 @@ h2 time.post-date {
   font-weight: 400; }
 .blog-entry a:link,
 .blog-entry a:visited {
-  font-style: italic;
   display: inline-block;
   color: #d65196;
   animation: blinker 3s linear infinite;
@@ -837,20 +856,19 @@ h2 time.post-date {
     line-height: 1.6; }
     .blog-entry figure figcaption a:link,
     .blog-entry figure figcaption a:visited {
-      font-style: italic;
       display: inline-block;
-      color: #1b3cf4;
+      color: #6ac1b8;
       animation: blinker 3s linear infinite;
       padding: 0 .2rem;
-      background-image: linear-gradient(to top, rgba(27, 60, 244, 0) 10%, rgba(27, 60, 244, 0.5) 14%, rgba(27, 60, 244, 0.5) 14%, rgba(27, 60, 244, 0) 20%);
+      background-image: linear-gradient(to top, rgba(106, 193, 184, 0) 10%, rgba(106, 193, 184, 0.5) 14%, rgba(106, 193, 184, 0.5) 14%, rgba(106, 193, 184, 0) 20%);
       border-radius: .3rem;
       transition: all .125s ease; }
     .blog-entry figure figcaption a:hover {
-      background: rgba(27, 60, 244, 0.8);
+      background: rgba(106, 193, 184, 0.8);
       color: white; }
     .backdropfilter .blog-entry figure figcaption {
       background-color: rgba(255, 255, 255, 0.6);
-      -webkit-backdrop-filter: blur(0.5rem); }
+      -webkit-backdrop-filter: blur(1rem); }
 
 .blog-entry figure + figure {
   margin-top: -8rem; }
@@ -889,10 +907,11 @@ h2 time.post-date {
     line-height: 1.6; }
 
 .blog-entry cite {
-  margin-top: -1rem !important;
+  margin-top: -3rem !important;
+  margin-bottom: 4rem;
   display: block;
-  font-style: italic;
-  padding-left: 1.4rem;
+  font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  padding-left: 2rem;
   opacity: 0.5; }
 
 .blog-entry pre {
@@ -911,14 +930,16 @@ h2 time.post-date {
     border: 1px solid #d1d0d1; }
 
 .blog-entry blockquote {
-  border-left: 0.4rem solid #1B3CF4;
+  border: 0.1rem solid #e8e8e8;
+  padding: 2rem 1rem;
+  border-radius: .6rem;
   width: calc(100% - 2rem);
   margin: 0 auto;
   display: block;
   max-width: 80rem; }
   .blog-entry blockquote p {
     font-size: 2.2rem;
-    font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif; }
+    font-style: italic; }
 
 /* ==============================
 /* ==============================
@@ -995,7 +1016,7 @@ h2 time.post-date {
     -ms-transition: -ms-filter 0.13s ease-in;
     transition: -webkit-filter 0.13s ease-in; }
   .work-thumb:hover .work-thumb-title {
-    color: #1b3cf4; }
+    color: #6ac1b8; }
   .work-thumb:hover figure {
     opacity: 1; }
     .work-thumb:hover figure img {
@@ -1092,14 +1113,14 @@ h2 time.post-date {
     font-style: italic;
     font-weight: 500;
     display: inline-block;
-    color: #1b3cf4;
+    color: #6ac1b8;
     animation: blinker 3s linear infinite;
     padding: 0 .2rem;
-    background-image: linear-gradient(to top, rgba(27, 60, 244, 0) 10%, rgba(27, 60, 244, 0.5) 14%, rgba(27, 60, 244, 0.5) 14%, rgba(27, 60, 244, 0) 20%);
+    background-image: linear-gradient(to top, rgba(106, 193, 184, 0) 10%, rgba(106, 193, 184, 0.5) 14%, rgba(106, 193, 184, 0.5) 14%, rgba(106, 193, 184, 0) 20%);
     border-radius: .3rem;
     transition: all .125s ease; }
   .workstudy figure figcaption a:hover {
-    background: rgba(27, 60, 244, 0.8);
+    background: rgba(106, 193, 184, 0.8);
     color: white; }
   .backdropfilter .workstudy figure figcaption {
     background-color: rgba(255, 255, 255, 0.6);
@@ -1262,7 +1283,7 @@ section.work-archive {
   .privacy-form input[type="password"]:hover,
   .privacy-form input[type="password"]:focus {
     outline: none;
-    border-color: #1b3cf4; }
+    border-color: #6ac1b8; }
   .privacy-form .privacy-submit {
     text-transform: uppercase;
     margin-bottom: 1rem; }
@@ -1469,7 +1490,7 @@ section.work-archive {
     max-width: 100rem;
     padding: 0 2rem;
     margin: 3rem auto;
-    color: #1b3cf4; }
+    color: #6ac1b8; }
 
   .blog-entry ul {
     margin: 0 auto;
