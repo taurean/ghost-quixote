@@ -375,6 +375,7 @@ nav.content-pagination {
 
 .blog-entry {
   background-color: grayscale(white);
+  margin: -4.5rem auto 0;
   margin: 0 auto;
   max-width: 144rem;
   width: 100%;
@@ -383,6 +384,7 @@ nav.content-pagination {
 
 .featured-image {
   display: block;
+  margin-top: -4.5rem;
   max-width: 144rem;
   width: 100%;
 }
@@ -393,7 +395,7 @@ h1.post-title {
   display: inline-block;
   width: 100%;
   padding: 0 2rem;
-  margin: 3rem 0 1rem;
+  margin: 5rem 0 1rem;
   color: color(brand-color-two);
 }
 
@@ -438,7 +440,7 @@ h2 time.post-date {
 
   a:link,
   a:visited {
-    font-style: italic;
+    // font-style: italic;
     display: inline-block;
     // font-family: $fontstack-display;
     color: color(brand-color-one);
@@ -487,7 +489,6 @@ h2 time.post-date {
 
     a:link,
     a:visited {
-      font-style: italic;
       display: inline-block;
       // font-family: $fontstack-display;
       color: color(brand-color-two);
@@ -510,7 +511,7 @@ h2 time.post-date {
 
     .backdropfilter & {
       background-color: color(white, 0, 0.6);
-      -webkit-backdrop-filter: blur(0.5rem);
+      -webkit-backdrop-filter: blur(1rem);
     }
   }
 }
@@ -563,10 +564,12 @@ h2 time.post-date {
 
 
 .blog-entry cite {
-  margin-top: -1rem !important;
+  margin-top: -3rem !important;
+  margin-bottom: 4rem;
   display: block;
-  font-style: italic;
-  padding-left: 1.4rem;
+  // font-style: italic;
+  font-family: $fontstack-ui;
+  padding-left: 2rem;
   opacity: 0.5;
 
   // &:before {
@@ -596,7 +599,10 @@ h2 time.post-date {
 
 
 .blog-entry blockquote {
-  border-left: .4rem solid $brand-color-two;
+  border: .1rem solid color(white, -1);
+  // background: color(white);
+  padding: 2rem 1rem;
+  border-radius: .6rem;
   width: calc(100% - 2rem);
   margin: 0 auto;
   display: block;
@@ -604,7 +610,8 @@ h2 time.post-date {
 
   p {
     font-size: $font-size-h2;
-    font-family: $fontstack-ui;
+    // font-family: $fontstack-ui;
+    font-style: italic;
   }
 
 }
