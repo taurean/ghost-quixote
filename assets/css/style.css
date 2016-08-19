@@ -1079,10 +1079,14 @@ h2 time.post-date {
   max-width: 144rem;
   margin: 8rem 0;
   position: relative; }
-  .workstudy figure.fullwidth img {
+  .workstudy figure.fullwidth img,
+  .workstudy figure.fullwidth picture,
+  .workstudy figure.fullwidth picture img {
     width: 100%;
-    max-width: 144rem; }
-.workstudy figure.subheading img {
+    max-width: 144rem;
+    display: block;
+    vertical-align: top; }
+.workstudy figure.subheading img, .workstudy figure.subheading picture {
   margin: 8rem auto 1rem;
   display: block;
   max-width: 10rem;
@@ -1093,8 +1097,11 @@ h2 time.post-date {
   margin: 8rem 0;
   display: flex;
   flex-wrap: wrap; }
-  .workstudy figure.doubleimage img {
+  .workstudy figure.doubleimage img,
+  .workstudy figure.doubleimage picture {
     display: block;
+    margin: 0;
+    padding: 0;
     width: 100%; }
 .workstudy figure figcaption {
   font-size: 1.6rem;
@@ -1136,7 +1143,8 @@ h2 time.post-date {
   outline: 1px solid red;
   margin-top: -4rem; }
 .workstudy figure:first-of-type {
-  margin-top: 0; }
+  margin-top: 0;
+  line-height: 0; }
 
 /* ===============================
 /* ===============================
@@ -1551,7 +1559,8 @@ section.work-archive {
   *********************************
   /* ===============================
   /* ============================ */
-  .workstudy figure.doubleimage img {
+  .workstudy figure.doubleimage img,
+  .workstudy figure.doubleimage picture {
     width: 50%; } }
 @media all and (min-width: 1440px) {
   .master-header {

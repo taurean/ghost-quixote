@@ -806,13 +806,18 @@ h2 time.post-date {
     margin: 8rem 0;
     position: relative;
 
-    img {
+    img,
+    picture,
+    picture img {
       width: 100%;
       max-width: 144rem;
+      display: block;
+      vertical-align: top;
     }
   }
 
-  &.subheading img {
+  &.subheading img,
+  &.subheading picture {
     margin: 8rem auto 1rem;
     display: block;
     max-width: 10rem;
@@ -826,8 +831,11 @@ h2 time.post-date {
     display: flex;
     flex-wrap: wrap;
 
-    img {
+    img,
+    picture {
       display: block;
+      margin: 0;
+      padding: 0;
       width: 100%;
     }
   }
@@ -907,6 +915,7 @@ h2 time.post-date {
 
   figure:first-of-type {
     margin-top: 0;
+    line-height: 0;
   }
 }
 
