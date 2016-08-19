@@ -808,6 +808,7 @@ h2 time.post-date {
 
     img,
     picture,
+    picture source,
     picture img {
       width: 100%;
       max-width: 144rem;
@@ -832,11 +833,22 @@ h2 time.post-date {
     flex-wrap: wrap;
 
     img,
-    picture {
+    picture
+    picture source,
+    picture img, {
       display: block;
       margin: 0;
       padding: 0;
       width: 100%;
+    }
+  }
+
+  picture {
+    max-width: 100%;
+
+    source,
+    img {
+      max-width: 100%;
     }
   }
 

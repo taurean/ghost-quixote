@@ -1081,6 +1081,7 @@ h2 time.post-date {
   position: relative; }
   .workstudy figure.fullwidth img,
   .workstudy figure.fullwidth picture,
+  .workstudy figure.fullwidth picture source,
   .workstudy figure.fullwidth picture img {
     width: 100%;
     max-width: 144rem;
@@ -1098,11 +1099,18 @@ h2 time.post-date {
   display: flex;
   flex-wrap: wrap; }
   .workstudy figure.doubleimage img,
-  .workstudy figure.doubleimage picture {
+  .workstudy figure.doubleimage picture
+  picture source,
+  .workstudy figure.doubleimage picture img {
     display: block;
     margin: 0;
     padding: 0;
     width: 100%; }
+.workstudy figure picture {
+  max-width: 100%; }
+  .workstudy figure picture source,
+  .workstudy figure picture img {
+    max-width: 100%; }
 .workstudy figure figcaption {
   font-size: 1.6rem;
   font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
