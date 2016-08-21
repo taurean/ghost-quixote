@@ -756,10 +756,6 @@ h2 time.post-date {
   margin: 0 auto;
   padding-bottom: 0rem;
   background-color: color(white);
-
-  figure:first-of-type {
-    margin-top: 0;
-  }
 }
 
 .workstudy h1 {
@@ -768,7 +764,6 @@ h2 time.post-date {
   font-weight: $font-normal;
   color: color(brand-color-one);
   text-align: center;
-  margin: 4rem 0;
 }
 
 .workstudy p {
@@ -776,9 +771,7 @@ h2 time.post-date {
     font-family: $fontstack-ui;
     width: 100%;
     max-width: 60rem;
-    padding: 0 2rem;
-    padding-top: 0;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
 
@@ -791,145 +784,8 @@ h2 time.post-date {
   font-weight: $font-normal;
   color: color(brand-color-one);
   text-transform: uppercase;
-  margin: 2rem 0;
 }
 
-.fullwidth {
-
-}
-
-.workstudy figure {
-
-  &.fullwidth {
-    width: 100%;
-    max-width: 144rem;
-    margin: 8rem 0;
-    position: relative;
-
-    img,
-    picture,
-    picture source,
-    picture img {
-      width: 100%;
-      max-width: 144rem;
-      display: block;
-      vertical-align: top;
-    }
-  }
-
-  &.subheading img,
-  &.subheading picture {
-    margin: 8rem auto 1rem;
-    display: block;
-    max-width: 10rem;
-    width: 100%;
-  }
-
-  &.doubleimage {
-    width: 100%;
-    max-width: 144rem;
-    margin: 8rem 0;
-    display: flex;
-    flex-wrap: wrap;
-
-    img,
-    picture
-    picture source,
-    picture img, {
-      display: block;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-    }
-  }
-
-  picture {
-    max-width: 100%;
-
-    source,
-    img {
-      max-width: 100%;
-    }
-  }
-
-
-
-  figcaption {
-    font-size: $font-size-base;
-    font-family: $fontstack-ui;
-    text-align: center;
-    position: absolute;
-    bottom: 2rem;
-    right: 2rem;
-    border-radius: .3rem;
-    display: inline-block;
-    padding: .6rem 1.2rem;
-
-    background-color: color(white, 0, 0.8);
-    line-height: $line-height-base;
-
-    a:link,
-    a:visited {
-      font-style: italic;
-      font-weight: $font-bold;
-      display: inline-block;
-      // font-family: $fontstack-display;
-      color: color(brand-color-two);
-      animation: blinker 3s linear infinite;
-      padding: 0 .2rem;
-      background-image: linear-gradient(to top,
-      rgba(color(brand-color-two), 0) 10%,
-      rgba(color(brand-color-two), .5) 14%,
-      rgba(color(brand-color-two), .5) 14%,
-      rgba(color(brand-color-two), 0) 20%
-      );
-      border-radius: .3rem;
-      transition: all .125s ease;
-    }
-
-    a:hover {
-      background: color(brand-color-two, 0, 0.8);
-      color: color(white);
-    }
-
-    .backdropfilter & {
-      background-color: color(white, 0, 0.6);
-      -webkit-backdrop-filter: blur(0.5rem);
-    }
-  }
-}
-
-
-//
-// .workstudy [alt^="SubheadingImage"] {
-  // margin: 8rem auto 1rem;
-  // display: block;
-  // max-width: 10rem;
-  // width: 100%;
-// }
-
-.workstudy {
-  figure.fullwidth + figure.fullwidth {
-    margin-top: -8rem;
-  }
-}
-
-.workstudy {
-  p + h2 {
-    margin-top: 8rem;
-    margin-bottom: -4rem;
-  }
-
-  figure[not="."] + h2 {
-    outline: 1px solid red;
-    margin-top: -4rem;
-  }
-
-  figure:first-of-type {
-    margin-top: 0;
-    line-height: 0;
-  }
-}
 
 /* ===============================
 /* ===============================
