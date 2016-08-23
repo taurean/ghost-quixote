@@ -16,7 +16,19 @@
 
 <article class="blog-entry">
 
-  <img class="featured-image" src="{{image}}">
+  {{!-- <img class="featured-image" src="{{image}}"> --}}
+
+  <figure class="fullwidth">
+<picture class="picture-set">
+<!-- [if IE 9]><video style="display: none;"><![endif] -->
+<source srcset="http://t-bryant.imagefly.io/w_640/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_1280/{{image absolute="true"}} 2x" media="(max-width: 640px)">
+<source srcset="http://t-bryant.imagefly.io/w_800/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_1600/{{image absolute="true"}} 2x" media="(max-width: 800px)">
+<source srcset="http://t-bryant.imagefly.io/w_1440/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_2880/{{image absolute="true"}} 2x">
+<!--[if IE 9]></video><![endif]-->
+<img srcset="http://t-bryant.imagefly.io/w_640/{{image absolute="true"}}" alt="Featured Image">
+<noscript><img src="http://t-bryant.imagefly.io/w_640/{{image absolute="true"}}" alt="Featured Image"></noscript>
+</picture>
+</figure>
 
   <h1 class="post-title">{{title}}</h1>
 
