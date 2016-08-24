@@ -220,16 +220,17 @@ article.entry-snippet p:after {
 
 
 .workstudy figure figcaption {
-  background-color: color(black, 0, 0.85);
+  background-color: color(black, 0, 0.8);
+
+  a:link,
+  a:visited {
+    color: color(brand-color-two);
+  }
 
 
   .backdropfilter & {
     background-color: color(black, 0, 0.5);
     -webkit-backdrop-filter: blur(1rem);
-
-    a {
-      font-style: normal;
-    }
   }
 }
 
