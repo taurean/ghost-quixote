@@ -382,13 +382,14 @@ nav.content-pagination {
   padding: 0;
 }
 
-.featured-image,
-blog-entry .fullwidth:first-of-type {
+.featured-image {
   display: block;
   margin-top: -4.5rem;
   max-width: 144rem;
   width: 100%;
 }
+
+
 
 h1.post-title {
   line-height: $line-height-heading;
@@ -615,6 +616,12 @@ h2 time.post-date {
     font-style: italic;
   }
 
+}
+
+
+
+.blog-entry .fullwidth:first-of-type {
+  margin-top: 0;
 }
 
 
