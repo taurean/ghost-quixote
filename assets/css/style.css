@@ -1541,6 +1541,9 @@ section.work-archive {
       padding: 0;
       margin: 0 0 2rem; }
 
+  .blog-entry .fullwidth:first-of-type {
+    margin-top: 0; }
+
   /* ===============================
   /* ===============================
   *********************************
