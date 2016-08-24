@@ -22,8 +22,8 @@
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{!-- {{ghost_head}} --}}
     <script type="text/javascript" src="{{asset "js/modernizr.js"}}"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
-
     <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -32,18 +32,23 @@
 
   ga('create', 'UA-81846212-1', 'auto');
   ga('send', 'pageview');
-
+  <script>
+  // Picture element HTML5 shiv
+  document.createElement( "picture" );
 </script>
+  <script type="text/javascript" src="{{asset "js/picturefill.js"}}" async></script>
+</script>
+
 </head>
 {{!-- <body class="{{body_class}} nav-closed"> --}}
 <body>
-  <script>
+  {{!-- <script>
     var currentTime = new Date().getHours();
      if (currentTime < (6))
        document.body.classList.add('nightmode');
      if (currentTime > (6+12))
        document.body.classList.add('nightmode');
-   </script>
+   </script> --}}
 
     {{!-- Adding in the master header I think? --}}
     {{> masterheader}}
@@ -57,11 +62,10 @@
     </div>
 
     {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
     {{!-- Fitvids makes video embeds responsive and awesome --}}
-    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+    {{!-- <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script> --}}
     {{!-- The main JavaScript file for Quixote --}}
 
     {{> master-footer}}

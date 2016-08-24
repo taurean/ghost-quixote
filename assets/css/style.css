@@ -271,6 +271,21 @@ cite,
 address {
   font-style: normal; }
 
+figure {
+  margin: 0;
+  padding: 0;
+  display: block; }
+
+picture {
+  margin: 0;
+  padding: 0;
+  display: block; }
+  picture source,
+  picture img {
+    margin: 0;
+    padding: 0;
+    display: block; }
+
 .btn {
   color: white;
   cursor: pointer;
@@ -464,12 +479,13 @@ body.nightmode {
   body.nightmode .workstudy {
     background-color: #151515; }
   body.nightmode .workstudy figure figcaption {
-    background-color: rgba(21, 21, 21, 0.85); }
+    background-color: rgba(21, 21, 21, 0.8); }
+    body.nightmode .workstudy figure figcaption a:link,
+    body.nightmode .workstudy figure figcaption a:visited {
+      color: #6ac1b8; }
     .backdropfilter body.nightmode .workstudy figure figcaption {
       background-color: rgba(21, 21, 21, 0.5);
       -webkit-backdrop-filter: blur(1rem); }
-      .backdropfilter body.nightmode .workstudy figure figcaption a {
-        font-style: normal; }
   body.nightmode .animation {
     background: linear-gradient(10deg, #096638 20%, #2D195A 40%, black 70%); }
   body.nightmode .privacy-shell {
@@ -1043,25 +1059,25 @@ h2 time.post-date {
   margin: 0 auto;
   padding-bottom: 0rem;
   background-color: white; }
-  .workstudy figure:first-of-type {
+  .workstudy h1 {
+    width: 100%;
+    font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    color: #d65196;
+    text-align: center;
+    margin-top: 8rem; }
+  .workstudy h1 + p {
+    margin-bottom: 8rem; }
+  .workstudy .featured-image.fullwidth:first-of-type {
     margin-top: 0; }
-
-.workstudy h1 {
-  width: 100%;
-  font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 400;
-  color: #d65196;
-  text-align: center;
-  margin: 4rem 0; }
 
 .workstudy p {
   font-size: 1.8rem;
   font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
   width: 100%;
   max-width: 60rem;
-  padding: 0 2rem;
-  padding-top: 0;
-  margin: 0 auto 0 auto; }
+  margin: 0 auto;
+  padding: 0 4rem; }
 
 .workstudy h2,
 .workstudy h3,
@@ -1072,71 +1088,89 @@ h2 time.post-date {
   font-weight: 400;
   color: #d65196;
   text-transform: uppercase;
-  margin: 2rem 0; }
+  margin: 8rem 0 2rem; }
 
-.workstudy figure.fullwidth {
-  width: 100%;
-  max-width: 144rem;
-  margin: 8rem 0;
-  position: relative; }
-  .workstudy figure.fullwidth img {
-    width: 100%;
-    max-width: 144rem; }
-.workstudy figure.subheading img {
-  margin: 8rem auto 1rem;
-  display: block;
-  max-width: 10rem;
+figure.full-width {
+  max-width: 100%;
+  margin: 0; }
+
+figure.subheading-image {
+  margin-top: 0rem; }
+  figure.subheading-image .picture-set img {
+    display: block;
+    margin: 0 auto; }
+
+.picture-set {
   width: 100%; }
-.workstudy figure.doubleimage {
+  .picture-set img {
+    max-width: 100%; }
+
+.fullwidth {
+  margin-top: 3rem; }
+
+.doubleimage {
   width: 100%;
   max-width: 144rem;
-  margin: 8rem 0;
+  margin: 3rem 0 0 0;
   display: flex;
   flex-wrap: wrap; }
-  .workstudy figure.doubleimage img {
-    display: block;
+  .doubleimage img,
+  .doubleimage .picture-set {
     width: 100%; }
-.workstudy figure figcaption {
-  font-size: 1.6rem;
-  font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  text-align: center;
-  position: absolute;
-  bottom: 2rem;
-  right: 2rem;
-  border-radius: .3rem;
-  display: inline-block;
-  padding: .6rem 1.2rem;
-  background-color: rgba(255, 255, 255, 0.8);
-  line-height: 1.6; }
-  .workstudy figure figcaption a:link,
-  .workstudy figure figcaption a:visited {
-    font-style: italic;
-    font-weight: 500;
-    display: inline-block;
-    color: #6ac1b8;
-    animation: blinker 3s linear infinite;
-    padding: 0 .2rem;
-    background-image: linear-gradient(to top, rgba(106, 193, 184, 0) 10%, rgba(106, 193, 184, 0.5) 14%, rgba(106, 193, 184, 0.5) 14%, rgba(106, 193, 184, 0) 20%);
+
+.fullwidth,
+.doubleimage {
+  position: relative; }
+  .fullwidth figcaption,
+  .doubleimage figcaption {
+    font-size: 1.6rem;
+    font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
     border-radius: .3rem;
-    transition: all .125s ease; }
-  .workstudy figure figcaption a:hover {
-    background: rgba(106, 193, 184, 0.8);
-    color: white; }
-  .backdropfilter .workstudy figure figcaption {
-    background-color: rgba(255, 255, 255, 0.6);
-    -webkit-backdrop-filter: blur(0.5rem); }
+    display: inline-block;
+    line-height: 1.6;
+    padding: .6rem 1.2rem;
+    background: rgba(255, 255, 255, 0.8); }
+    .fullwidth figcaption a:link,
+    .fullwidth figcaption a:visited,
+    .doubleimage figcaption a:link,
+    .doubleimage figcaption a:visited {
+      font-weight: 500;
+      display: inline-block;
+      color: #416b68;
+      animation: blinker 3s linear infinite;
+      padding: 0 .2rem;
+      transition: all .125s ease;
+      line-height: 1;
+      border-bottom: 0.1rem solid rgba(73, 124, 120, 0.5); }
+    .fullwidth figcaption a:hover,
+    .doubleimage figcaption a:hover {
+      border-bottom-width: .2rem;
+      border-bottom-color: #518d88;
+      color: #518d88; }
+    .backdropfilter .fullwidth figcaption, .backdropfilter
+    .doubleimage figcaption {
+      background-color: rgba(255, 255, 255, 0.5);
+      -webkit-backdrop-filter: blur(0.5rem); }
 
-.workstudy figure.fullwidth + figure.fullwidth {
-  margin-top: -8rem; }
-
-.workstudy p + h2 {
-  margin-top: 8rem;
-  margin-bottom: -4rem; }
-.workstudy figure[not="."] + h2 {
-  outline: 1px solid red;
-  margin-top: -4rem; }
-.workstudy figure:first-of-type {
+.fullwidth + .fullwidth,
+.doubleimage + .doubleimage,
+.doubleimage + .fullwidth,
+.fullwidth + .doubleimage {
   margin-top: 0; }
+
+.workstudy .fullwidth:first-of-type {
+  margin-top: 0; }
+
+figure.subheading-image {
+  margin-top: 6rem; }
+
+.subheading-image + h2,
+.subheading-image + h3 {
+  margin-top: 1rem; }
 
 /* ===============================
 /* ===============================
@@ -1551,7 +1585,7 @@ section.work-archive {
   *********************************
   /* ===============================
   /* ============================ */
-  .workstudy figure.doubleimage img {
+  .doubleimage .picture-set {
     width: 50%; } }
 @media all and (min-width: 1440px) {
   .master-header {

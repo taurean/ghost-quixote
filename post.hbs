@@ -16,7 +16,19 @@
 
 <article class="blog-entry">
 
-  <img class="featured-image" src="{{image}}">
+  {{!-- <img class="featured-image" src="{{image}}"> --}}
+
+  <figure class="fullwidth">
+<picture class="picture-set">
+<!-- [if IE 9]><video style="display: none;"><![endif] -->
+<source srcset="http://t-bryant.imagefly.io/w_640,q_90,f_jpeg,s_none/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_1280,q_90,f_jpeg,s_none/{{image absolute="true"}} 2x" media="(max-width: 640px)">
+<source srcset="http://t-bryant.imagefly.io/w_800,q_90,f_jpeg,s_none/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_1600,q_90,f_jpeg,s_none/{{image absolute="true"}} 2x" media="(max-width: 800px)">
+<source srcset="http://t-bryant.imagefly.io/w_1440,q_90,f_jpeg,s_none/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_2880,q_90,f_jpeg,s_none/{{image absolute="true"}} 2x">
+<!--[if IE 9]></video><![endif]-->
+<img srcset="http://t-bryant.imagefly.io/w_640,q_90,f_jpeg,s_none/{{image absolute="true"}}" alt="Featured Image">
+<noscript><img src="http://t-bryant.imagefly.io/w_640,q_90,f_jpeg,s_none/{{image absolute="true"}}" alt="Featured Image"></noscript>
+</picture>
+</figure>
 
   <h1 class="post-title">{{title}}</h1>
 
@@ -34,6 +46,18 @@
 {{#has tag="workstudy"}}
 
 <article class="workstudy">
+
+    <figure class="featured-image fullwidth">
+  <picture class="picture-set">
+  <!-- [if IE 9]><video style="display: none;"><![endif] -->
+  <source srcset="http://t-bryant.imagefly.io/w_640,q_90,f_jpeg,s_none/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_1280,q_90,f_jpeg,s_none/{{image absolute="true"}} 2x" media="(max-width: 640px)">
+  <source srcset="http://t-bryant.imagefly.io/w_800,q_90,f_jpeg,s_none/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_1600,q_90,f_jpeg,s_none/{{image absolute="true"}} 2x" media="(max-width: 800px)">
+  <source srcset="http://t-bryant.imagefly.io/w_1440,q_90,f_jpeg,s_none/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_2880,q_90,f_jpeg,s_none/{{image absolute="true"}} 2x">
+  <!--[if IE 9]></video><![endif]-->
+  <img srcset="http://t-bryant.imagefly.io/w_640,q_90,f_jpeg,s_none/{{image absolute="true"}}" alt="Featured Image">
+  <noscript><img src="http://t-bryant.imagefly.io/w_640,q_90,f_jpeg,s_none/{{image absolute="true"}}" alt="Featured Image"></noscript>
+  </picture>
+  </figure>
 
   {{content}}
 

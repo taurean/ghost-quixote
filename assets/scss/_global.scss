@@ -757,18 +757,22 @@ h2 time.post-date {
   padding-bottom: 0rem;
   background-color: color(white);
 
-  figure:first-of-type {
+  h1 {
+    width: 100%;
+    font-family: $fontstack-ui;
+    font-weight: $font-normal;
+    color: color(brand-color-one);
+    text-align: center;
+    margin-top: 8rem;
+  }
+
+  h1 + p {
+    margin-bottom: 8rem;
+  }
+
+  .featured-image.fullwidth:first-of-type {
     margin-top: 0;
   }
-}
-
-.workstudy h1 {
-  width: 100%;
-  font-family: $fontstack-ui;
-  font-weight: $font-normal;
-  color: color(brand-color-one);
-  text-align: center;
-  margin: 4rem 0;
 }
 
 .workstudy p {
@@ -776,11 +780,9 @@ h2 time.post-date {
     font-family: $fontstack-ui;
     width: 100%;
     max-width: 60rem;
-    padding: 0 2rem;
-    padding-top: 0;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
+    padding: 0 4rem;
 }
-
 
 .workstudy h2,
 .workstudy h3,
@@ -791,47 +793,53 @@ h2 time.post-date {
   font-weight: $font-normal;
   color: color(brand-color-one);
   text-transform: uppercase;
-  margin: 2rem 0;
+  margin: 8rem 0 2rem;
+}
+
+figure.full-width {
+  max-width: 100%;
+  margin: 0;
+}
+
+figure.subheading-image {
+  margin-top: 0rem;
+
+  .picture-set img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.picture-set {
+  width: 100%;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .fullwidth {
-
+  margin-top: 3rem;
 }
 
-.workstudy figure {
 
-  &.fullwidth {
-    width: 100%;
-    max-width: 144rem;
-    margin: 8rem 0;
-    position: relative;
+.doubleimage {
+  width: 100%;
+  max-width: 144rem;
+  margin: 3rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
 
-    img {
-      width: 100%;
-      max-width: 144rem;
-    }
-  }
-
-  &.subheading img {
-    margin: 8rem auto 1rem;
-    display: block;
-    max-width: 10rem;
+  img,
+  .picture-set {
     width: 100%;
   }
+}
 
-  &.doubleimage {
-    width: 100%;
-    max-width: 144rem;
-    margin: 8rem 0;
-    display: flex;
-    flex-wrap: wrap;
 
-    img {
-      display: block;
-      width: 100%;
-    }
-  }
-
+.fullwidth,
+.doubleimage {
+  position: relative;
 
 
   figcaption {
@@ -843,71 +851,53 @@ h2 time.post-date {
     right: 2rem;
     border-radius: .3rem;
     display: inline-block;
-    padding: .6rem 1.2rem;
-
-    background-color: color(white, 0, 0.8);
     line-height: $line-height-base;
+    padding: .6rem 1.2rem;
+    background: color(white, 0, 0.8);
 
     a:link,
     a:visited {
-      font-style: italic;
       font-weight: $font-bold;
       display: inline-block;
-      // font-family: $fontstack-display;
-      color: color(brand-color-two);
+      color: color(brand-color-two, -5);
       animation: blinker 3s linear infinite;
       padding: 0 .2rem;
-      background-image: linear-gradient(to top,
-      rgba(color(brand-color-two), 0) 10%,
-      rgba(color(brand-color-two), .5) 14%,
-      rgba(color(brand-color-two), .5) 14%,
-      rgba(color(brand-color-two), 0) 20%
-      );
-      border-radius: .3rem;
       transition: all .125s ease;
+      line-height: 1;
+      border-bottom: .1rem solid color(brand-color-two, -4, 0.5);
     }
 
     a:hover {
-      background: color(brand-color-two, 0, 0.8);
-      color: color(white);
+      border-bottom-width: .2rem;
+      border-bottom-color: color(brand-color-two, -3);
+      color: color(brand-color-two, -3);
     }
 
     .backdropfilter & {
-      background-color: color(white, 0, 0.6);
+      background-color: color(white, 0, 0.5);
       -webkit-backdrop-filter: blur(0.5rem);
     }
   }
 }
 
-
-//
-// .workstudy [alt^="SubheadingImage"] {
-  // margin: 8rem auto 1rem;
-  // display: block;
-  // max-width: 10rem;
-  // width: 100%;
-// }
-
-.workstudy {
-  figure.fullwidth + figure.fullwidth {
-    margin-top: -8rem;
-  }
+.fullwidth + .fullwidth,
+.doubleimage + .doubleimage,
+.doubleimage + .fullwidth,
+.fullwidth + .doubleimage {
+  margin-top: 0;
 }
 
-.workstudy {
-  p + h2 {
-    margin-top: 8rem;
-    margin-bottom: -4rem;
-  }
+.workstudy .fullwidth:first-of-type {
+  margin-top: 0;
+}
 
-  figure[not="."] + h2 {
-    outline: 1px solid red;
-    margin-top: -4rem;
-  }
+figure.subheading-image {
+  margin-top: 6rem;
+}
 
-  figure:first-of-type {
-    margin-top: 0;
-  }
+.subheading-image + h2,
+.subheading-image + h3 {
+  margin-top: 1rem;
 }
 
 /* ===============================
