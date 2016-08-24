@@ -1027,7 +1027,6 @@ h2 time.post-date {
     left: 0;
     width: 100%; }
   .work-thumb-img, .work-thumb-img img {
-    border-radius: 3px !important;
     width: 100%;
     -webkit-transition: -webkit-filter 0.13s ease-in;
     -moz-transition: -moz-filter 0.13s ease-in;
