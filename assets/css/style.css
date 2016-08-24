@@ -271,6 +271,21 @@ cite,
 address {
   font-style: normal; }
 
+figure {
+  margin: 0;
+  padding: 0;
+  display: block; }
+
+picture {
+  margin: 0;
+  padding: 0;
+  display: block; }
+  picture source,
+  picture img {
+    margin: 0;
+    padding: 0;
+    display: block; }
+
 .btn {
   color: white;
   cursor: pointer;
@@ -1043,20 +1058,23 @@ h2 time.post-date {
   margin: 0 auto;
   padding-bottom: 0rem;
   background-color: white; }
-
-.workstudy h1 {
-  width: 100%;
-  font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
-  font-weight: 400;
-  color: #d65196;
-  text-align: center; }
+  .workstudy h1 {
+    width: 100%;
+    font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 400;
+    color: #d65196;
+    text-align: center;
+    margin-top: 8rem; }
+  .workstudy h1 + p {
+    margin-bottom: 8rem; }
 
 .workstudy p {
   font-size: 1.8rem;
   font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
   width: 100%;
   max-width: 60rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 0 4rem; }
 
 .workstudy h2,
 .workstudy h3,
@@ -1066,7 +1084,43 @@ h2 time.post-date {
   font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-weight: 400;
   color: #d65196;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin: 8rem 0 2rem; }
+
+figure.full-width {
+  max-width: 100%;
+  margin: 0; }
+
+figure.subheading-image {
+  margin-top: 0rem; }
+  figure.subheading-image .picture-set img {
+    display: block;
+    margin: 0 auto; }
+
+.picture-set {
+  width: 100%; }
+  .picture-set img {
+    max-width: 100%; }
+
+.fullwidth {
+  margin-top: 3rem; }
+
+.doubleimage {
+  width: 100%;
+  max-width: 144rem;
+  margin: 3rem 0 0 0;
+  display: flex;
+  flex-wrap: wrap; }
+  .doubleimage img,
+  .doubleimage .picture-set {
+    width: 100%; }
+
+.fullwidth + .fullwidth,
+.doubleimage + .doubleimage,
+.doubleimage + .fullwidth,
+.fullwidth + .doubleimage {
+  margin-top: 0;
+  margin-bottom: 0; }
 
 /* ===============================
 /* ===============================
@@ -1481,8 +1535,7 @@ section.work-archive {
   *********************************
   /* ===============================
   /* ============================ */
-  .workstudy figure.doubleimage img,
-  .workstudy figure.doubleimage picture {
+  .doubleimage .picture-set {
     width: 50%; } }
 @media all and (min-width: 1440px) {
   .master-header {
