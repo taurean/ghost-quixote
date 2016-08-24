@@ -794,7 +794,8 @@ nav.content-pagination {
   width: 100%;
   padding: 0; }
 
-.featured-image {
+.featured-image,
+blog-entry .fullwidth:first-of-type {
   display: block;
   margin-top: -4.5rem;
   max-width: 144rem;
