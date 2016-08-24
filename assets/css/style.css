@@ -1067,6 +1067,8 @@ h2 time.post-date {
     margin-top: 8rem; }
   .workstudy h1 + p {
     margin-bottom: 8rem; }
+  .workstudy .featured-image.fullwidth:first-of-type {
+    margin-top: 0; }
 
 .workstudy p {
   font-size: 1.8rem;

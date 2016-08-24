@@ -769,6 +769,10 @@ h2 time.post-date {
   h1 + p {
     margin-bottom: 8rem;
   }
+
+  .featured-image.fullwidth:first-of-type {
+    margin-top: 0;
+  }
 }
 
 .workstudy p {
