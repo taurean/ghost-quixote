@@ -19,7 +19,7 @@
 </header> --}}
 
 {{!-- The main content area on the homepage --}}
-
+<main class="landing-content">
 <section class="masthead">
   <h2 class="etymology-header">Definition</h3>
   <p class="masthead--header"><span class="masthead--name">Taurean</span> <span class="masthead--phonetic-spelling">tour-ē-en</span> • <span class="masthead--part-of-speech">noun</span></p>
@@ -35,7 +35,7 @@
 {{#foreach posts}}
 <article class="writing-card">
 
-{{!--
+
 <picture class="picture-set">
 <!-- [if IE 9]><video style="display: none;"><![endif] -->
 <source srcset="http://t-bryant.imagefly.io/w_700,h_500,q_90,f_jpeg,s_none/https://hd.unsplash.com/photo-1451337516015-6b6e9a44a8a3 1x, http://t-bryant.imagefly.io/w_1440,h_1000,q_90,f_jpeg,s_none/https://hd.unsplash.com/photo-1451337516015-6b6e9a44a8a3 2x" media="(max-width: 680px)">
@@ -45,10 +45,10 @@
 <!--[if IE 9]></video><![endif]-->
 <img srcset="http://t-bryant.imagefly.io/w_640,q_90,f_jpeg,s_none/https://hd.unsplash.com/photo-1451337516015-6b6e9a44a8a3" alt="Featured Image">
 <noscript><img src="http://t-bryant.imagefly.io/w_640,q_90,f_jpeg,s_none/https://hd.unsplash.com/photo-1451337516015-6b6e9a44a8a3" alt="Featured Image"></noscript>
-</picture> --}}
+</picture>
 
 
-<picture class="picture-set">
+{{!-- <picture class="picture-set">
 <!-- [if IE 9]><video style="display: none;"><![endif] -->
 <source srcset="http://t-bryant.imagefly.io/w_700,h_500,q_90,f_jpeg,s_none/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_1440,h_1000,q_90,f_jpeg,s_none/{{image absolute="true"}} 2x" media="(max-width: 680px)">
 
@@ -57,7 +57,7 @@
 <!--[if IE 9]></video><![endif]-->
 <img srcset="http://t-bryant.imagefly.io/w_350,h_600,q_90,f_jpeg,s_none/{{image absolute="true"}}" alt="Featured Image">
 <noscript><img src="http://t-bryant.imagefly.io/w_350,h_600,q_90,f_jpeg,s_none/{{image absolute="true"}}" alt="Featured Image"></noscript>
-</picture>
+</picture> --}}
 
 
 {{!-- <picture class="picture-set">
@@ -81,3 +81,5 @@
 
 {{/get}}
 </section>
+
+</main>

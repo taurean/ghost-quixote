@@ -1,5 +1,7 @@
 @import 'no-frills/no-frills-importer';
 
+
+// Nightmode
 body.nightmode {
   background: grayscale(black);
 
@@ -14,23 +16,10 @@ body.nightmode {
   @import 'nightmode';
 }
 
-
+// Main styles
 @import 'global';
 
-
-
-@media all and (min-width: 680px) {
-  @import 'tablet';
-}
-
-@media all and (min-width: 1440px) {
-
-  .master-header {
-    transition: margin-top $timing-transitions;
-    margin-top: 3rem;
-  }
-  footer {
-    transition: margin-bottom $timing-transitions;
-    margin-bottom: 3rem;
-  }
-}
+// Breakpoints
+@media all and (min-width: 680px) { @import 'small-breakpoint';}
+@media all and (min-width: 960px) { @import 'medium-breakpoint';}
+@media all and (min-width: 1440px) { @import 'large-breakpoint'; }

@@ -155,14 +155,6 @@ footer .footer-nav .secondary-footer-nav li {
 section.masthead {
   padding: 10rem 0 10rem 6rem;
 
-  // .masthead--header,
-  // .definition,
-  // .etymology-header,
-  // .etymology-text {
-  //   margin: inherit auto;
-  //   max-width: 85%;
-  // }
-
   .masthead--header {
     font-size: $font-size-h1;
     font-family: $fontstack-masthead;
@@ -209,26 +201,37 @@ section.masthead {
 
 .featured-writing {
   flex-direction: row;
+  flex-wrap: wrap;
   padding: 4rem 2rem;
+  margin: 0;
 }
 
 .writing-card {
   border-radius: 0.5rem;
-  margin-right: 2rem;
+  flex-basis: calc(50% - 2rem);
+  margin: 0 1rem 2rem;
+
+  &:last-of-type {
+  }
 
   img {
     border-radius: 0.4rem;
+    width: 100%;
   }
 
-  &:last-of-type {
-    margin-right: 0;
-  }
 
   .card-content {
     border-radius: 0 0 0.4rem 0.4rem;
     bottom: -0.1rem;
     border-bottom: none;
+    left: 0;
+    top: 40%;
+    right: 0;
     box-shadow: 0px 0.2rem 0.4rem 0px color(black, 0, 0.4);
+  }
+
+  &--title {
+    font-size: $font-size-h4;
   }
 }
 

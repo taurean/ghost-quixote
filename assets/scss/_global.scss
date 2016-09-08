@@ -244,6 +244,13 @@ footer .nightmode-section {
 /* ===============================
 /* ============================ */
 
+.landing-content {
+  display: block;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
 /*
 ========================
 
@@ -337,6 +344,8 @@ section.masthead {
     &--title {
       font-size: $font-size-h2;
       max-width: 85%;
+      line-height: $line-height-heading;
+      margin-bottom: 0;
       font-weight: normal;
     }
 
@@ -344,6 +353,7 @@ section.masthead {
       font-family: $fontstack-ui;
       font-weight: $font-normal;
       opacity: 0.5;
+      margin-top: 0;
     }
 
     .btn {
