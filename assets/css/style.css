@@ -357,6 +357,20 @@ body.nightmode {
   *********************************
   /* ===============================
   /* ============================ */
+  /*
+  ========================
+  
+      Definition Masthead
+  
+  ========================
+  */
+  /*
+  ========================
+  
+      Writing Cards
+  
+  ========================
+  */
   /* ===============================
   /* ===============================
   *********************************
@@ -467,6 +481,11 @@ body.nightmode {
   body.nightmode section.masthead {
     background: #6ac1b8;
     color: #151515; }
+  body.nightmode .writing-card .card-content {
+    background: rgba(21, 21, 21, 0.9); }
+    .backdropfilter body.nightmode .writing-card .card-content {
+      background: rgba(21, 21, 21, 0.6);
+      -webkit-backdrop-filter: blur(3rem); }
   body.nightmode article.entry-snippet {
     color: #e8e8e8; }
   body.nightmode nav.content-pagination ul li a:link,
@@ -713,6 +732,13 @@ footer .nightmode-section {
 *********************************
 /* ===============================
 /* ============================ */
+/*
+========================
+
+    Definition Masthead
+
+========================
+*/
 section.masthead {
   background: #d65196;
   color: white;
@@ -748,6 +774,43 @@ section.masthead {
     font-size: 1.4rem; }
   section.masthead .etymology-text {
     max-width: 36rem; }
+
+/*
+========================
+
+    Writing Cards
+
+========================
+*/
+.featured-writing {
+  display: flex;
+  flex-direction: column; }
+
+.writing-card {
+  position: relative; }
+  .writing-card .card-content {
+    background: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    padding: 2rem 1rem;
+    border-bottom: 0.1rem solid rgba(21, 21, 21, 0.1); }
+    .backdropfilter .writing-card .card-content {
+      background: rgba(255, 255, 255, 0.7);
+      -webkit-backdrop-filter: blur(3rem); }
+    .writing-card .card-content--title {
+      font-size: 2.2rem;
+      max-width: 85%;
+      font-weight: normal; }
+    .writing-card .card-content--date {
+      font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
+      font-weight: 400;
+      opacity: 0.5; }
+    .writing-card .card-content .btn {
+      position: absolute;
+      bottom: 3rem; }
 
 /* ===============================
 /* ===============================
@@ -1547,6 +1610,30 @@ section.work-archive {
       font-size: 1.8rem; }
     section.masthead .etymology-text {
       max-width: 80rem; }
+
+  /*
+  ========================
+  
+      Writing Cards
+  
+  ========================
+  */
+  .featured-writing {
+    flex-direction: row;
+    padding: 4rem 2rem; }
+
+  .writing-card {
+    border-radius: 0.5rem;
+    margin-right: 2rem; }
+    .writing-card img {
+      border-radius: 0.4rem; }
+    .writing-card:last-of-type {
+      margin-right: 0; }
+    .writing-card .card-content {
+      border-radius: 0 0 0.4rem 0.4rem;
+      bottom: -0.1rem;
+      border-bottom: none;
+      box-shadow: 0px 0.2rem 0.4rem 0px rgba(21, 21, 21, 0.4); }
 
   /* ===============================
   /* ===============================

@@ -19,9 +19,65 @@
 </header> --}}
 
 {{!-- The main content area on the homepage --}}
-  <section class="masthead">
-    <h2 class="masthead--header"><span class="masthead--name">Taurean</span> <span class="masthead--phonetic-spelling">tour-ē-en</span> • <span class="masthead--part-of-speech">noun</span></h2>
-    <p class="definition">Design generalist & aspiring front-end dev.</p>
-    <h3 class="etymology-header">Etymology</h3>
-    <p class="etymology-text">East African in origin. <strong>Tau</strong> roughly translates to ‘lion’, and <strong>ean</strong> to ‘son of’.</p>
-  </section>
+
+<section class="masthead">
+  <h2 class="etymology-header">Definition</h3>
+  <p class="masthead--header"><span class="masthead--name">Taurean</span> <span class="masthead--phonetic-spelling">tour-ē-en</span> • <span class="masthead--part-of-speech">noun</span></p>
+  <p class="definition">Design generalist & aspiring front-end dev.</p>
+  <h2 class="etymology-header">Etymology</h3>
+  <p class="etymology-text">East African in origin. <strong>Tau</strong> roughly translates to ‘lion’, and <strong>ean</strong> to ‘son of’.</p>
+</section>
+
+<section class="featured-writing">
+{{#get "posts" include="date,url" filter="tags:writing" limit="4"}}
+
+
+{{#foreach posts}}
+<article class="writing-card">
+
+{{!--
+<picture class="picture-set">
+<!-- [if IE 9]><video style="display: none;"><![endif] -->
+<source srcset="http://t-bryant.imagefly.io/w_700,h_500,q_90,f_jpeg,s_none/https://hd.unsplash.com/photo-1451337516015-6b6e9a44a8a3 1x, http://t-bryant.imagefly.io/w_1440,h_1000,q_90,f_jpeg,s_none/https://hd.unsplash.com/photo-1451337516015-6b6e9a44a8a3 2x" media="(max-width: 680px)">
+
+
+<source srcset="http://t-bryant.imagefly.io/w_350,h_600,q_90,f_jpeg,s_none/https://hd.unsplash.com/photo-1451337516015-6b6e9a44a8a3 1x, http://t-bryant.imagefly.io/w_700,h_1200,q_90,f_jpeg,s_none/https://hd.unsplash.com/photo-1451337516015-6b6e9a44a8a3 2x">
+<!--[if IE 9]></video><![endif]-->
+<img srcset="http://t-bryant.imagefly.io/w_640,q_90,f_jpeg,s_none/https://hd.unsplash.com/photo-1451337516015-6b6e9a44a8a3" alt="Featured Image">
+<noscript><img src="http://t-bryant.imagefly.io/w_640,q_90,f_jpeg,s_none/https://hd.unsplash.com/photo-1451337516015-6b6e9a44a8a3" alt="Featured Image"></noscript>
+</picture> --}}
+
+
+<picture class="picture-set">
+<!-- [if IE 9]><video style="display: none;"><![endif] -->
+<source srcset="http://t-bryant.imagefly.io/w_700,h_500,q_90,f_jpeg,s_none/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_1440,h_1000,q_90,f_jpeg,s_none/{{image absolute="true"}} 2x" media="(max-width: 680px)">
+
+
+<source srcset="http://t-bryant.imagefly.io/w_350,h_600,q_90,f_jpeg,s_none/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_700,h_1200,q_90,f_jpeg,s_none/{{image absolute="true"}} 2x">
+<!--[if IE 9]></video><![endif]-->
+<img srcset="http://t-bryant.imagefly.io/w_350,h_600,q_90,f_jpeg,s_none/{{image absolute="true"}}" alt="Featured Image">
+<noscript><img src="http://t-bryant.imagefly.io/w_350,h_600,q_90,f_jpeg,s_none/{{image absolute="true"}}" alt="Featured Image"></noscript>
+</picture>
+
+
+{{!-- <picture class="picture-set">
+<!-- [if IE 9]><video style="display: none;"><![endif] -->
+<source srcset="http://t-bryant.imagefly.io/w_640,q_90,f_jpeg,s_none/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_1280,q_90,f_jpeg,s_none/{{image absolute="true"}} 2x" media="(max-width: 640px)">
+<source srcset="http://t-bryant.imagefly.io/w_800,q_90,f_jpeg,s_none/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_1600,q_90,f_jpeg,s_none/{{image absolute="true"}} 2x" media="(max-width: 800px)">
+<source srcset="http://t-bryant.imagefly.io/w_1440,q_90,f_jpeg,s_none/{{image absolute="true"}} 1x, http://t-bryant.imagefly.io/w_2880,q_90,f_jpeg,s_none/{{image absolute="true"}} 2x">
+<!--[if IE 9]></video><![endif]-->
+<img srcset="http://t-bryant.imagefly.io/w_640,q_90,f_jpeg,s_none/{{image absolute="true"}}" alt="Featured Image">
+<noscript><img src="http://t-bryant.imagefly.io/w_640,q_90,f_jpeg,s_none/{{image absolute="true"}}" alt="Featured Image"></noscript>
+</picture> --}}
+
+<div class="card-content">
+<h2 class="card-content--title">{{title}}</h2>
+<h3 class="card-content--date">{{date}}</h3>
+<a href="../{{slug}}" class="btn read-more-btn">Read More <span class="right-arrow">&#8594;</span></a>
+</div>
+
+</article>
+{{/foreach}}
+
+{{/get}}
+</section>

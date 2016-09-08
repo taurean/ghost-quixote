@@ -122,12 +122,35 @@ footer .copyright {
 /* ===============================
 /* ============================ */
 
+/*
+========================
+
+    Definition Masthead
+
+========================
+*/
+
 section.masthead {
   background: color(brand-color-two);
   color: color(black);
 }
 
+/*
+========================
 
+    Writing Cards
+
+========================
+*/
+
+.writing-card .card-content {
+  background: color(black, 0, 0.9);
+
+  .backdropfilter & {
+    background: color(black, 0, 0.6);
+    -webkit-backdrop-filter: blur(3rem);
+  }
+}
 
 /* ===============================
 /* ===============================

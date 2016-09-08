@@ -199,6 +199,39 @@ section.masthead {
 
 }
 
+/*
+========================
+
+    Writing Cards
+
+========================
+*/
+
+.featured-writing {
+  flex-direction: row;
+  padding: 4rem 2rem;
+}
+
+.writing-card {
+  border-radius: 0.5rem;
+  margin-right: 2rem;
+
+  img {
+    border-radius: 0.4rem;
+  }
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  .card-content {
+    border-radius: 0 0 0.4rem 0.4rem;
+    bottom: -0.1rem;
+    border-bottom: none;
+    box-shadow: 0px 0.2rem 0.4rem 0px color(black, 0, 0.4);
+  }
+}
+
 
 
 /* ===============================

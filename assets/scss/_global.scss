@@ -244,6 +244,13 @@ footer .nightmode-section {
 /* ===============================
 /* ============================ */
 
+/*
+========================
+
+    Definition Masthead
+
+========================
+*/
 
 section.masthead {
   background: color(brand-color-one);
@@ -296,6 +303,55 @@ section.masthead {
   }
 }
 
+/*
+========================
+
+    Writing Cards
+
+========================
+*/
+
+.featured-writing {
+  display: flex;
+  flex-direction: column;
+}
+
+.writing-card {
+  position: relative;
+
+  .card-content {
+    background: color(white, 0, 0.95);
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    padding: 2rem 1rem;
+    border-bottom: .1rem solid color(black, 0, 0.1);
+
+    .backdropfilter & {
+      background: color(white, 0, 0.7);
+      -webkit-backdrop-filter: blur(3rem);
+    }
+
+    &--title {
+      font-size: $font-size-h2;
+      max-width: 85%;
+      font-weight: normal;
+    }
+
+    &--date {
+      font-family: $fontstack-ui;
+      font-weight: $font-normal;
+      opacity: 0.5;
+    }
+
+    .btn {
+      position: absolute;
+      bottom: 3rem;
+    }
+  }
+}
 
 
 /* ===============================
