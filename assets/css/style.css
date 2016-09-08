@@ -349,6 +349,21 @@ body.nightmode {
   
   #################################
   
+  // Landing Page
+  
+  #################################
+  
+  •••••••••••••••••••••••••••••••••
+  *********************************
+  /* ===============================
+  /* ============================ */
+  /* ===============================
+  /* ===============================
+  *********************************
+  •••••••••••••••••••••••••••••••••
+  
+  #################################
+  
   // Blog Posts Directory
   
   #################################
@@ -449,6 +464,9 @@ body.nightmode {
     opacity: 1; }
     body.nightmode .nightmode-toggle:hover {
       background: rgba(53, 81, 80, 0.2); }
+  body.nightmode section.masthead {
+    background: #6ac1b8;
+    color: #151515; }
   body.nightmode article.entry-snippet {
     color: #e8e8e8; }
   body.nightmode nav.content-pagination ul li a:link,
@@ -679,6 +697,57 @@ footer .nightmode-section {
     background: #355150;
     border-color: #355150;
     color: white; }
+
+/* ===============================
+/* ===============================
+*********************************
+•••••••••••••••••••••••••••••••••
+
+#################################
+
+// Landing Page
+
+#################################
+
+•••••••••••••••••••••••••••••••••
+*********************************
+/* ===============================
+/* ============================ */
+section.masthead {
+  background: #d65196;
+  color: white;
+  display: block;
+  font-size: 1.6rem;
+  padding: 3rem 3rem 6rem;
+  width: 100%; }
+  section.masthead .masthead--header {
+    font-family: "TiemposText", Georgia, Times, "Times New Roman", serif;
+    font-size: 1.6rem;
+    font-weight: 400; }
+  section.masthead .masthead--name,
+  section.masthead .masthead--phonetic-spelling,
+  section.masthead .masthead--part-of-speech {
+    display: inline-block; }
+  section.masthead .masthead--name {
+    font-weight: 500;
+    font-size: 2.8rem;
+    margin-right: 1rem; }
+  section.masthead .masthead--phonetic-spelling,
+  section.masthead .masthead--part-of-speech {
+    font-size: 1.8rem;
+    font-style: italic; }
+  section.masthead .definition,
+  section.masthead .etymology-text {
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-bottom: 3rem; }
+  section.masthead .etymology-header {
+    font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1ex;
+    font-size: 1.4rem; }
+  section.masthead .etymology-text {
+    max-width: 36rem; }
 
 /* ===============================
 /* ===============================
@@ -1441,6 +1510,43 @@ section.work-archive {
   footer .footer-nav .main-footer-nav li,
   footer .footer-nav .secondary-footer-nav li {
     margin: .6rem 2rem; }
+
+  /* ===============================
+  /* ===============================
+  *********************************
+  •••••••••••••••••••••••••••••••••
+  
+  #################################
+  
+  // Landing Page
+  
+  #################################
+  
+  •••••••••••••••••••••••••••••••••
+  *********************************
+  /* ===============================
+  /* ============================ */
+  section.masthead {
+    padding: 10rem 0 10rem 6rem; }
+    section.masthead .masthead--header {
+      font-size: 2.8rem;
+      font-family: "TiemposHeadline", Georgia, Times, "Times New Roman", serif; }
+    section.masthead .masthead--name {
+      font-size: 8rem;
+      margin-right: 2rem; }
+    section.masthead .masthead--phonetic-spelling,
+    section.masthead .masthead--part-of-speech {
+      font-size: 2.8rem; }
+    section.masthead .definition {
+      margin-bottom: 8rem; }
+    section.masthead .definition,
+    section.masthead .etymology-text {
+      font-size: 4rem;
+      max-width: 90%; }
+    section.masthead .etymology-header {
+      font-size: 1.8rem; }
+    section.masthead .etymology-text {
+      max-width: 80rem; }
 
   /* ===============================
   /* ===============================

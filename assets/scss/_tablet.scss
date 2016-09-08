@@ -133,6 +133,74 @@ footer .footer-nav .secondary-footer-nav li {
   margin: .6rem 2rem;
 }
 
+
+
+/* ===============================
+/* ===============================
+*********************************
+•••••••••••••••••••••••••••••••••
+
+#################################
+
+// Landing Page
+
+#################################
+
+•••••••••••••••••••••••••••••••••
+*********************************
+/* ===============================
+/* ============================ */
+
+
+section.masthead {
+  padding: 10rem 0 10rem 6rem;
+
+  // .masthead--header,
+  // .definition,
+  // .etymology-header,
+  // .etymology-text {
+  //   margin: inherit auto;
+  //   max-width: 85%;
+  // }
+
+  .masthead--header {
+    font-size: $font-size-h1;
+    font-family: $fontstack-masthead;
+  }
+
+  .masthead--name {
+    font-size: $font-size-masthead;
+    margin-right: 2rem;
+  }
+
+  .masthead--phonetic-spelling,
+  .masthead--part-of-speech {
+    font-size: $font-size-h1;
+  }
+
+  .definition {
+    margin-bottom: 8rem;
+  }
+
+  .definition,
+  .etymology-text {
+    font-size: 4rem;
+    max-width: 90%;
+  }
+
+  .etymology-header {
+    font-size: $font-size-h3;
+  }
+
+  .etymology-text {
+    max-width: 80rem;
+  }
+
+
+}
+
+
+
 /* ===============================
 /* ===============================
 *********************************
