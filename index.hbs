@@ -72,11 +72,12 @@
 {{/get}}
 </section>
 
+<h2 class="featured-work-header">Featured Work</h2>
 <section class="featured-work">
 {{#get "posts" include="date,url" filter="tags:workstudy" limit="2"}}
     {{#foreach posts}}
 
-      <a href="../{{slug}}" class="work-thumb">
+      <a href="../{{slug}}" class="work-thumb work-thumb--featured">
         <figcaption class="work-thumb-title">{{title}}</figcaption>
         <figure class="work-thumb-img">
           {{!-- <img src="{{image absolute="true"}}" alt="thumb"> --}}
@@ -88,6 +89,15 @@
             <img srcset="http://t-bryant.imagefly.io/w_720,q_90,f_jpeg,s_none/{{image absolute="true"}}" alt="Case Study Thumbnail">
             <noscript><img src="http://t-bryant.imagefly.io/w_720,q_90,f_jpeg,s_none/{{image absolute="true"}}" alt="Case Study Thumbnail"></noscript>
           </picture>
+
+
+          {{!-- <picture>
+            <!-- [if IE 9]><video style="display: none;"><![endif] -->
+            <source srcset="http://t-bryant.imagefly.io/w_720,q_90,f_jpeg,s_none/http://t-bryant.imagefly.io/w_1440,q_90,f_jpeg,s_none/http://t-bryant.com/content/images/2016/08/masthead.png 1x, http://t-bryant.imagefly.io/w_1440,q_90,f_jpeg,s_none/http://t-bryant.imagefly.io/w_1440,q_90,f_jpeg,s_none/http://t-bryant.com/content/images/2016/08/masthead.png 2x" media="(max-width: 720px)">
+            <!--[if IE 9]></video><![endif]-->
+            <img srcset="http://t-bryant.imagefly.io/w_720,q_90,f_jpeg,s_none/http://t-bryant.imagefly.io/w_1440,q_90,f_jpeg,s_none/http://t-bryant.com/content/images/2016/08/masthead.png" alt="Case Study Thumbnail">
+            <noscript><img src="http://t-bryant.imagefly.io/w_720,q_90,f_jpeg,s_none/http://t-bryant.imagefly.io/w_1440,q_90,f_jpeg,s_none/http://t-bryant.com/content/images/2016/08/masthead.png" alt="Case Study Thumbnail"></noscript>
+          </picture> --}}
         </figure>
       </a>
 
