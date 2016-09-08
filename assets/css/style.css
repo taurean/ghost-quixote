@@ -1669,6 +1669,9 @@ section.work-archive {
   
   ========================
   */
+  .featured-work--home {
+    margin-bottom: 3rem; }
+
   .work-thumb.work-thumb--featured {
     flex-basis: calc(50% - 2rem);
     margin: 1rem;
