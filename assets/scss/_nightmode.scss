@@ -90,9 +90,18 @@ footer .footer-nav ul li a {
   color: color(white);
 }
 
+footer .footer-nav--last-fm {
+  color: color(white);
+
+  a {
+    color: color(brand-color-two);
+  }
+}
+
 footer .copyright {
   color: color(white);
 }
+
 
 .nightmode-toggle {
   background: color(brand-color-two, -7);

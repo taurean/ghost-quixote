@@ -469,6 +469,10 @@ body.nightmode {
     border-color: #232325; }
   body.nightmode footer .footer-nav ul li a {
     color: white; }
+  body.nightmode footer .footer-nav--last-fm {
+    color: white; }
+    body.nightmode footer .footer-nav--last-fm a {
+      color: #6ac1b8; }
   body.nightmode footer .copyright {
     color: white; }
   body.nightmode .nightmode-toggle {
@@ -639,14 +643,13 @@ header.master-header {
 ========================
 */
 footer {
-  background: white; }
+  background: white;
+  padding-bottom: 3rem; }
 
 footer.master-footer {
   background: white;
-  height: 22rem;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 2rem;
+  padding-bottom: 20rem;
+  min-height: 28rem;
   border-top: 1px solid #e8e8e8; }
 
 footer .availability {
@@ -686,6 +689,15 @@ footer .footer-nav .secondary-footer-nav {
   footer .footer-nav .secondary-footer-nav li a {
     color: #151515; }
 
+footer .footer-nav--last-fm {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+  color: #151515;
+  font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.6rem; }
+  footer .footer-nav--last-fm a {
+    color: #d65196; }
+
 footer .copyright {
   color: #151515;
   font-family: "National", Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -696,7 +708,9 @@ footer .copyright {
   text-align: center; }
 
 footer .nightmode-section {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem; }
 
 .nightmode-toggle {
   background: rgba(53, 81, 80, 0.2);
@@ -710,7 +724,7 @@ footer .nightmode-section {
   font-weight: 500;
   text-transform: uppercase;
   opacity: 0.6;
-  margin-bottom: 1.2rem;
+  margin-bottom: 4rem;
   padding: .6rem 1.2rem; }
   .nightmode-toggle:hover {
     background: #355150;

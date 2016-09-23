@@ -43,3 +43,16 @@
      });
      xhr.send();
  })();
+
+ // Last FM Pull
+
+ $(document).ready(function() {
+  var url = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=taurean_&api_key=48bb9c8d732085945548a187b7fe994c&format=json";
+  $.getJSON(url, function(data) {
+    var artist = data.recenttracks.track[0].artist["#text"];
+    var song = data.recenttracks.track[0]["name"];
+    var cover = data.recenttracks.track[0].image[3]["#text"];
+
+    $('#last-fm').html("\""+song+ '" by ' +artist);
+  });
+});

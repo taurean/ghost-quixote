@@ -134,14 +134,13 @@ header.master-header {
 
 footer {
   background: color(white);
+  padding-bottom: 3rem;
 }
 
 footer.master-footer {
   background: color(white);
-  height: 22rem;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 2rem;
+  padding-bottom: 20rem;
+  min-height: 28rem;
   border-top: 1px solid color(white, -1, 1);
 }
 
@@ -192,6 +191,18 @@ footer .footer-nav .secondary-footer-nav {
   }
 }
 
+footer .footer-nav--last-fm {
+  text-align: center;
+  padding: 3rem 1rem 1rem;
+  color: color(black);
+  font-family: $fontstack-ui;
+  font-size: $font-size-base;
+
+  a {
+    color: color(brand-color-one);
+  }
+}
+
 footer .copyright {
   color: color(black, 0, 1);
   font-family: $fontstack-ui;
@@ -204,6 +215,8 @@ footer .copyright {
 
 footer .nightmode-section {
   text-align: center;
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .nightmode-toggle {
@@ -218,7 +231,7 @@ footer .nightmode-section {
   font-weight: $font-bold;
   text-transform: uppercase;
   opacity: 0.6;
-  margin-bottom: 1.2rem;
+  margin-bottom: 4rem;
   padding: .6rem 1.2rem;
 
   &:hover {
